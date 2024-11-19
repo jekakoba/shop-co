@@ -13,17 +13,12 @@
     <link rel="stylesheet" crossorigin href="/css/index.css">
   </head>
   <body class="font-f-primary">
-    <script locals="">
-      module.exports = {
-        header: 'bg-red-500'
-      }
-    </script>
-    <header id="header" class="bg-red-500 top-0 right-0 left-0 z-50 fixed py-[5px] w-full">
-      <div class="items-center sm:gap-10 lgMax:gap-3 grid grid-cols-[30px_126px_1fr_62px] lg:grid-cols-[160px_1fr_1fr_62px] h-14 sm:min-h-24 container">
+    <header id="header" class="top-0 right-0 left-0 z-50 fixed py-[5px] w-full">
+      <div class="[.search-open_&]:grid-cols-[30px_1fr] items-center sm:gap-10 lgMax:gap-3 grid grid-cols-[30px_126px_1fr_62px] lg:grid-cols-[160px_1fr_1fr_62px] bg-white h-14 sm:min-h-24 container">
         <button class="icon-menu" type="button" aria-label="open menu" data-menu-open="">
           <span></span>
         </button>
-        <div class="relative z-10">
+        <div class="[.search-open_&]:hidden relative z-10">
           <img src="data:image/svg+xml,%3csvg%20width='159'%20height='25'%20viewBox='0%200%20159%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.6%2024.7467C3.86667%2024.72%200.213333%2022.32%200.4%2016.5067H7.04C7.12%2018.0267%208.4%2018.96%2011.6%2018.9867C14.4267%2019.0133%2015.7333%2018.2133%2015.7333%2017.1733C15.7333%2016.4533%2015.3333%2015.7067%2013.1467%2015.3867L10.2667%2014.9333C6.02667%2014.24%200.933333%2013.7333%200.933333%208C0.933333%203.57333%204.53333%200.853333%2011.6533%200.853333C18.08%200.853333%2022.56%202.64%2022.4267%209.04H15.84C15.5733%207.54667%2014.32%206.61333%2011.4933%206.61333C9.04%206.61333%208.02667%207.36%208.02667%208.37333C8.02667%209.01333%208.42667%209.78667%2010.1333%2010.0533L12.5067%2010.4533C16.96%2011.2%2023.0667%2011.3333%2023.0667%2017.4667C23.0667%2022.3467%2019.28%2024.7733%2011.6%2024.7467ZM40.5446%201.6H47.9313V24H40.5446V15.8933H31.8513V24H24.4646V1.6H31.8513V9.70667H40.5446V1.6ZM62.1017%2024.7467C54.395%2024.7467%2049.4083%2019.9733%2049.4083%2012.8C49.4083%205.62667%2054.395%200.853333%2062.1017%200.853333C69.8083%200.853333%2074.795%205.62667%2074.795%2012.8C74.795%2019.9733%2069.8083%2024.7467%2062.1017%2024.7467ZM62.1017%2018.3733C65.035%2018.3733%2067.4617%2016.3467%2067.4617%2012.8C67.4617%209.25333%2065.035%207.22667%2062.1017%207.22667C59.1683%207.22667%2056.7417%209.25333%2056.7417%2012.8C56.7417%2016.3467%2059.1683%2018.3733%2062.1017%2018.3733ZM76.2771%2024V1.6H88.9971C95.1038%201.6%2098.7304%204.32%2098.7304%2010.3467C98.7304%2016.3733%2095.1038%2019.0933%2089.0238%2019.0933H83.6638V24H76.2771ZM83.6638%2012.96H88.3571C90.1438%2012.96%2091.2904%2012.08%2091.2904%2010.3467C91.2904%208.61333%2090.1438%207.73333%2088.3837%207.73333H83.6638V12.96ZM102.426%2024.4267C100.426%2024.4267%2098.7458%2022.7733%2098.7458%2020.8C98.7458%2018.8267%20100.426%2017.1733%20102.426%2017.1733C104.426%2017.1733%20106.106%2018.8267%20106.106%2020.8C106.106%2022.7733%20104.426%2024.4267%20102.426%2024.4267ZM120.151%2024.7467C112.605%2024.7467%20107.565%2019.9733%20107.565%2012.8C107.565%205.62667%20112.605%200.853333%20120.151%200.853333C125.618%200.853333%20131.218%203.25333%20131.965%2010.8267H124.925C124.311%208.37333%20122.578%207.22667%20120.151%207.22667C117.218%207.22667%20114.898%209.41333%20114.898%2012.8C114.898%2016.1867%20117.218%2018.3733%20120.151%2018.3733C122.578%2018.3733%20124.311%2017.2267%20124.925%2014.72H131.965C131.218%2022.3467%20125.671%2024.7467%20120.151%2024.7467ZM146.008%2024.7467C138.301%2024.7467%20133.315%2019.9733%20133.315%2012.8C133.315%205.62667%20138.301%200.853333%20146.008%200.853333C153.715%200.853333%20158.701%205.62667%20158.701%2012.8C158.701%2019.9733%20153.715%2024.7467%20146.008%2024.7467ZM146.008%2018.3733C148.941%2018.3733%20151.368%2016.3467%20151.368%2012.8C151.368%209.25333%20148.941%207.22667%20146.008%207.22667C143.075%207.22667%20140.648%209.25333%20140.648%2012.8C140.648%2016.3467%20143.075%2018.3733%20146.008%2018.3733Z'%20fill='black'/%3e%3c/svg%3e" alt="logo">
         </div>
         <div class="menu">
@@ -46,13 +41,13 @@
         </div>
         <div>
           <label class="block relative h-full">
-            <button id="search" class="top-3 left-4 sm:absolute flex ml-auto w-6 h-6 text-2xl" aria-label="search">
+            <button id="search" class="flex ml-auto w-6 h-6 text-2xl [.search-open_&]:absolute top-3 left-4 sm:absolute sm:top-3 sm:left-4 sm:pointer-events-none" aria-label="search">
               <i class="sm:text-black/40 _icon-serach"></i>
             </button>
-            <input class="sm:block hidden bg-c-white-light pr-3 pl-[52px] rounded-[62px] w-full h-12" autocomplete="off" type="search" name="search" placeholder="Search for products...">
+            <input class="[.menu-open_&]:bg-white [.search-open_&]:block sm:text-base sm:block hidden bg-c-white-light pr-3 pl-[52px] rounded-[62px] w-full h-12 group-[.menu-open]" autocomplete="off" type="search" name="search" placeholder="Search for products...">
           </label>
         </div>
-        <div class="flex gap-3">
+        <div class="[.search-open_&]:hidden flex gap-3">
           <button class="relative z-10 flex justify-cente items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6" aria-label="shop">
             <i class="font-bold text-[24px] _icon-shop"></i>
           </button>
