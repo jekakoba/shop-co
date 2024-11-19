@@ -1,0 +1,38 @@
+{
+  "arrow": {
+    "encodedCode": "\\ea01",
+    "prefix": "_icon",
+    "className": "_icon-arrow",
+    "unicode": "&#59905;"
+  },
+  "close": {
+    "encodedCode": "\\ea02",
+    "prefix": "_icon",
+    "className": "_icon-close",
+    "unicode": "&#59906;"
+  },
+  "mail": {
+    "encodedCode": "\\ea03",
+    "prefix": "_icon",
+    "className": "_icon-mail",
+    "unicode": "&#59907;"
+  },
+  "serach": {
+    "encodedCode": "\\ea04",
+    "prefix": "_icon",
+    "className": "_icon-serach",
+    "unicode": "&#59908;"
+  },
+  "shop": {
+    "encodedCode": "\\ea05",
+    "prefix": "_icon",
+    "className": "_icon-shop",
+    "unicode": "&#59909;"
+  },
+  "user": {
+    "encodedCode": "\\ea06",
+    "prefix": "_icon",
+    "className": "_icon-user",
+    "unicode": "&#59910;"
+  }
+}

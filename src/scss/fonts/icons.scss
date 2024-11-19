@@ -1,0 +1,42 @@
+%ic {
+	font-family: "icons" !important;
+	display: block;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+	@extend %ic;
+}
+
+:root {
+	--_icon-arrow: "\ea01";
+	--_icon-close: "\ea02";
+	--_icon-mail: "\ea03";
+	--_icon-serach: "\ea04";
+	--_icon-shop: "\ea05";
+	--_icon-user: "\ea06";
+}
+._icon-arrow:before {
+	content: var(--_icon-arrow);
+}
+._icon-close:before {
+	content: var(--_icon-close);
+}
+._icon-mail:before {
+	content: var(--_icon-mail);
+}
+._icon-serach:before {
+	content: var(--_icon-serach);
+}
+._icon-shop:before {
+	content: var(--_icon-shop);
+}
+._icon-user:before {
+	content: var(--_icon-user);
+}
