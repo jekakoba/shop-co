@@ -11,28 +11,52 @@
     "className": "_icon-close",
     "unicode": "&#59906;"
   },
-  "mail": {
+  "facebook": {
     "encodedCode": "\\ea03",
     "prefix": "_icon",
-    "className": "_icon-mail",
+    "className": "_icon-facebook",
     "unicode": "&#59907;"
   },
-  "serach": {
+  "github": {
     "encodedCode": "\\ea04",
     "prefix": "_icon",
-    "className": "_icon-serach",
+    "className": "_icon-github",
     "unicode": "&#59908;"
   },
-  "shop": {
+  "instagram": {
     "encodedCode": "\\ea05",
     "prefix": "_icon",
-    "className": "_icon-shop",
+    "className": "_icon-instagram",
     "unicode": "&#59909;"
   },
-  "user": {
+  "mail": {
     "encodedCode": "\\ea06",
     "prefix": "_icon",
-    "className": "_icon-user",
+    "className": "_icon-mail",
     "unicode": "&#59910;"
+  },
+  "serach": {
+    "encodedCode": "\\ea07",
+    "prefix": "_icon",
+    "className": "_icon-serach",
+    "unicode": "&#59911;"
+  },
+  "shop": {
+    "encodedCode": "\\ea08",
+    "prefix": "_icon",
+    "className": "_icon-shop",
+    "unicode": "&#59912;"
+  },
+  "twitter": {
+    "encodedCode": "\\ea09",
+    "prefix": "_icon",
+    "className": "_icon-twitter",
+    "unicode": "&#59913;"
+  },
+  "user": {
+    "encodedCode": "\\ea0a",
+    "prefix": "_icon",
+    "className": "_icon-user",
+    "unicode": "&#59914;"
   }
 }

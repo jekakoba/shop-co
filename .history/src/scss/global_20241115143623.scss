@@ -1,0 +1,22 @@
+html,
+body {
+	scroll-behavior: smooth;
+	overscroll-behavior-y: none;
+	min-height: 100vh;
+	min-height: 100svh;
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+textarea,
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}

@@ -1,0 +1,5 @@
+.head {
+	&:not(:last-child) {
+		margin-bottom: 32ox;
+	}
+}

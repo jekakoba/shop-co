@@ -1,29 +1,29 @@
-# Vite -based assembly template
+# Шаблон для збірки на основі Vite
 
-This project is a web -development template based on [Vite] (https://vitejs.dev/), with support for components, SCSS styles, image optimization, and HTML flexible through `Posththl`. This template is suitable for creating modern, fast and light websites.
+Цей проект - це шаблон для веб-розробки, створений на основі [Vite](https://vitejs.dev/), з підтримкою компонентів, стилів на SCSS, оптимізації зображень, а також гнучкою системою управління HTML через `posthtml`. Цей шаблон підходить для створення сучасних, швидких і легких вебсайтів.
 
-## Basic functions
+## Основні функції
 
-- ** Component structure HTML **- Use `@vituum/vite-plugin-posthtml` and additional plugins to work with HTML components.
- -** SCSS styles **-automatic import styles of components with `SRC/HTML/Components/` using `vite-plugin-suss-glob-import`.
- -** CSS ** Optimization-Use `vite-Plugin-Purgecss` to remove unnecessary CSS-stilers when assembling.
- - ** image processing **- automatic compression of images and creation of Webp versions with `vite-plugin-imagemin`.
- - ** SVG and fonts ** - font conversion and creation of icon font with SVG using `svgtofont`.
+- **Компонентна структура HTML** - використання `@vituum/vite-plugin-posthtml` та додаткових плагінів для роботи з компонентами HTML.
+- **Стилі SCSS** - автоматичний імпорт стилів компонентів з `src/html/components/` за допомогою `vite-plugin-sass-glob-import`.
+- **Оптимізація CSS** - використання `vite-plugin-purgecss` для видалення зайвих CSS-стилів при зборці.
+- **Обробка зображень** - автоматичне стиснення зображень та створення WebP версій за допомогою `vite-plugin-imagemin`.
+- **SVG та шрифти** - конвертація шрифтів та створення іконкового шрифту з SVG за допомогою `svgtofont`.
 
- ## Settings
+## Налаштування
 
- - ** Snippets **: at the root of the project is `Snippets.json`, which contains the recommended snow 5 for ease of work with the template.
- - ** Template configuration **: `TEMPlate.config.js` - Configuration file for template settings.
- -** Font conversion **: SVG-Icons are added to FONTS-Convert/Icons/`, and TTF fonts are added in the FONTS-Convert/` fonts. The conversion results are stored in `SRC/assets/fonts/`.
+- **Snippets**: У корені проекту знаходиться `snippets.json`, який містить рекомендовані сніпети для зручності роботи з шаблоном.
+- **Конфігурація шаблону**: `template.config.js` - конфігураційний файл для налаштувань шаблону.
+- **Конвертація шрифтів**: SVG-іконки додаються в `fonts-convert/icons/`, а файли шрифтів у форматі TTF додаються в `fonts-convert/`. Результати конвертації зберігаються в `src/assets/fonts/`.
 
- ## scripts
+## Скрипти
 
- - `Yarn Dev` - launches the development server.
- - `Yarn Build` - collects a project for production.
- - `yarn preview` - launches a server for viewing a billion.
- - `yarn fonts' - generates icon font (if new icons are added) and converts fonts.
- - `YARN IFONT` - generates only icon font (useful for updating or adding icons).
+- `yarn dev` - Запускає сервер розробки.
+- `yarn build` - Збирає проект для продакшну.
+- `yarn preview` - Запускає сервер для перегляду білду.
+- `yarn fonts` - Генерує іконковий шрифт (якщо додані нові іконки) та конвертує шрифти.
+- `yarn ifont` - Генерує лише іконковий шрифт (корисно для оновлення або додавання іконок).
 
- ## Documentation
+## Документація
 
 - /documentation/docs.html

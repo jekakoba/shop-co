@@ -3,57 +3,39 @@ import path from 'path'
 import templateCfg from './template.config.js'
 import modules from './imports.js'
 
-const rootPath = './src'
 
 const makeAliases = (aliases) => {
-  return Object.entries(aliases).map(([key, value]) => {
-    return { key: path.resolve(process.cwd(), value) }
-  })
+  return Object.entries(aliases).reduce((acc, [key, value]) => {
+    acc[key] = path.resolve(process.cwd(), value)
+    return acc
+  }, {})
 }
+
 const aliases = makeAliases(templateCfg.aliases)
 const isProduction = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
   plugins: [
-    // modules.tailwindcss(),
-    modules.viteHtmlAliasPlugin(aliases),
     modules.sassGlobImports(),
     modules.vituum(),
     modules.posthtml({
       encoding: 'utf-8',
       root: process.cwd(),
       plugins: [
+        modules.posthtmlFetch(),
+        modules.expressions(),
+        ...((isProduction)
+          ? [modules.beautify({ rules: { blankLines: '', sortAttrs: true }, })] : []
+        ),
+        ...((templateCfg.addImgSizes) ? [modules.imgAutosize(),] : []),
         ...((isProduction && templateCfg.images.makeWebp)
           ? [modules.posthtmlWebp({ classIgnore: [...templateCfg.images.ignoreWebpClasses], }),] : []
         ),
-        modules.posthtmlFetch(),
-        modules.expressions(),
-        modules.imgAutosize(),
-        modules.posthtmlReplace([
-          {
-            match: { tag: 'img', },
-            attrs: { src: { from: '@img/', to: templateCfg.aliases['@img'], } }
-          },
-          {
-            match: { tag: 'source', },
-            attrs: { srcset: { from: '/src/assets/img/', to: '/img/', } }
-          },
-          {
-            match: { tag: 'video' },
-            attrs: { src: { from: '@vid/', to: templateCfg.aliases['@vid'], } }
-          },
-          {
-            match: { tag: 'include', },
-            attrs: { src: { from: '@cmp/', to: templateCfg.aliases['@cmp'], } }
-          },
-        ]),
-
-        modules.beautify({ rules: { blankLines: '', sortAttrs: true }, }),
       ],
     }),
 
     // TailwindCSS
-    ...((templateCfg.tailwindcss) ? [modules.tailwindcss(),] : []),
+    ...((templateCfg.tailwindcss) ? [modules.tailwindcss()] : []),
 
     // PurgeCSS "Cleaner"
     ...((isProduction && templateCfg.cleanCss) ? [
@@ -85,17 +67,13 @@ export default defineConfig({
       name: 'custom-hmr',
       enforce: 'post',
       handleHotUpdate({ file, server }) {
+        console.log(file)
         if (file.endsWith('.html')) {
           server.ws.send({ type: 'full-reload', path: '*' })
         }
       },
     },
   ],
-
-  // Aliases
-  resolve: {
-    alias: { ...aliases },
-  },
 
   // CSS preprocessor
   css: {
@@ -108,29 +86,39 @@ export default defineConfig({
 
   // Server config
   server: {
-	host: '0.0.0.0',
+    host: '0.0.0.0',
     watch: {
       ignored: [
         '**/vendor/**',
-        '**/storage/**',
         '**/node_modules/**',
         '**/ifont-gen/**',
         '**/plugins/**',
         '**/dist/**',
         '**/.git/**',
+        '**/.gitattributes/**',
+        '**/package.json/**',
+        '**/yarn.lock/**',
+        '**/snippets.json/**',
       ],
+      include: ['./src/**/*.json'],
     },
+  },
+
+  resolve: {
+    alias: { ...aliases },
   },
 
   // Build config
   build: {
+    root: './src',
     target: 'esnext',
-    root: rootPath,
     assetsDir: 'src/assets',
     sourcemap: true,
+    assetsInlineLimit: 0,
     modulePreload: {
       polyfill: false,
     },
+
     rollupOptions: {
       output: {
         format: 'es',
@@ -141,7 +129,7 @@ export default defineConfig({
           const srcPath = asset.originalFileNames
             ? asset.originalFileNames[0].replace('src/assets/', '').replace(/\/([^/]+)$/g, '')
             : ''
-          console.log(srcPath)
+
           const folders = {
             css: 'css',
             png: srcPath,

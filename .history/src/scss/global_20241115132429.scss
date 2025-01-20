@@ -1,0 +1,12 @@
+html,
+body {
+	scroll-behavior: smooth;
+	overscroll-behavior-y: none;
+	min-height: 100vh;
+	min-height: 100svh;
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+}
