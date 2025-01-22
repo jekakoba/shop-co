@@ -25,6 +25,12 @@ TF.menuInit()
 
 // import "./scripts/dynamic_adapt.js"
 
+// ===============================================
+/* Dynamically creates a variable with the height of elements*/
+// Documentation inside the module file:
+
+import "./scripts/get-element-height.js"
+
 // ? ===============================================
 /* Function to add and remove classes to the root element when scrolling down or up*/
 // Documentation inside the module file:
@@ -72,4 +78,4 @@ TF.menuInit()
 
 // ? Custom scripts ================================
 
-import './custom.js'
+// import './custom.js'

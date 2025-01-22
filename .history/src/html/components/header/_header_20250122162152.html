@@ -21,8 +21,8 @@
     <form class="[.search-open_&]:block smMax:hidden">
       <label class="block relative h-full">
         <button
-          id="search-input"
-          class="flex ml-auto w-6 h-6 text-2xl [.search-open_&]:absolute top-3 left-4 sm:absolute sm:top-3 sm:left-4 pointer-events-none"
+          id="close-input"
+          class="flex ml-auto w-6 h-6 text-2xl absolute top-3 left-4 sm:absolute sm:top-3 sm:left-4 pointer-events-none"
           aria-label="search"
         >
           <i class="sm:text-black/40 _icon-serach"></i>
@@ -35,10 +35,9 @@
           placeholder="Search for products..."
         />
         <button
-          id="search-form-clear"
-          class="absolute right-4 top-4 w-4 h-4 visible"
+          id="close-input"
+          class="absolute right-4 top-4 w-4 h-4"
           type="button"
-          hidden
           aria-label="close search input"
         >
           <i class="_icon-close"></i>
@@ -56,7 +55,7 @@
         <i class="_icon-serach"></i>
       </button>
       <button
-        class="relative z-10 flex justify-cente items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6"
+        class="relative z-10 flex justify-center items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6"
         aria-label="shop"
       >
         <i class="text-3xl _icon-shop"></i>
