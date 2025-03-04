@@ -1,10 +1,10 @@
 function fullSearchInput() {
 	document.addEventListener("click", function (e) {
 		const targetElement = e.target;
-		if (targetElement.closest("#search")) {
+		if (targetElement.closest("[data-close-search]")) {
 			document.documentElement.classList.add("search-open");
 			e.preventDefault();
-		} else if (targetElement.closest("[data-close-search]")) {
+		} else if (!targetElement.closest("[data-search]")) {
 			document.documentElement.classList.remove("search-open");
 		}
 	});
@@ -27,23 +27,9 @@ function searchFormClear() {
 		clearButton.hidden = true;
 	});
 }
-function updatePlaceholder() {
-	const inputsPlaceholder = document.querySelectorAll('[data-switch-placeholder]');
-	if (!inputsPlaceholder.length) return;
-	inputsPlaceholder.forEach(input => {
-		const mobilePlaceholder = input.getAttribute('data-mobile-placeholder');
-		if (window.matchMedia("(max-width: 767px)").matches) {
-			input.placeholder = mobilePlaceholder;
-		} else {
-			input.placeholder = "Search for products...";
-		}
-	});
-}
 document.addEventListener("DOMContentLoaded", function (e) {
 	fullSearchInput();
 	searchFormClear()
-	updatePlaceholder();
 });
 
 
-window.addEventListener("resize", updatePlaceholder);

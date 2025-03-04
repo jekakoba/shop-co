@@ -1,5 +1,5 @@
 <header data-get-height id="header" class="fixed top-0 right-0 left-0 w-full z-50 py-[5px] bg-white">
-	<div class="container grid grid-cols-[30px_126px_auto] min-h-14 sm:min-h-24 smMax:[.search-open_&]:grid-cols-[30px_1fr_auto] items-center sm:gap-10 lgMax:gap-3 sm:grid-cols-[30px_126px_1fr_62px] lg:grid-cols-[160px_300px_1fr_62px]">
+	<div class="container grid grid-cols-[30px_126px_auto] min-h-14 sm:min-h-24 smMax:[.search-open_&]:grid-cols-[30px_1fr] items-center sm:gap-10 lgMax:gap-3 sm:grid-cols-[30px_126px_1fr_62px] lg:grid-cols-[160px_300px_1fr_62px]">
 		<button class="icon-menu" type="button" aria-label="open menu" data-menu-open>
 			<span></span>
 		</button>
@@ -13,23 +13,24 @@
 					<i class="sm:text-black/40 _icon-serach"></i>
 				</button>
 				<input class="[.menu-open_&]:bg-white [.search-open_&]:block sm:text-base sm:block hidden bg-c-white-light pr-10 pl-[52px] rounded-[62px] w-full h-12 group-[.menu-open]" autocomplete="off" type="text" name="search"
-					placeholder="Search for products..." data-switch-placeholder data-mobile-placeholder="Search..." />
+					placeholder="Search for products..." />
 				<button id="search-form-clear" class="absolute right-4 top-4 w-4 h-4 visible" type="button" hidden aria-label="close search input">
 					<i class="_icon-close"></i>
 				</button>
 			</label>
 		</form>
-		<div class=" flex gap-4 sm:gap-[14px] flex-wrap smMax:ml-auto relative z-10">
-			<button class="hidden smMax:[.search-open_&]:block" data-close-search>Cancel</button>
+		<div class="smMax:[.search-open_&]:hidden flex gap-4 sm:gap-[14px] flex-wrap smMax:ml-auto relative z-10">
+			<button>Cancel</button>
 			<button id="search" class="flex w-6 h-6 text-2xl [.search-open_&]:hidden sm:hidden" aria-label="search">
 				<i class="_icon-serach"></i>
 			</button>
-			<button class="relative z-10 flex justify-cente items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6 smMax:[.search-open_&]:hidden" aria-label="shop">
+			<button class="relative z-10 flex justify-cente items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6" aria-label="shop">
 				<i class="text-3xl _icon-shop"></i>
 			</button>
-			<button class="relative z-10 flex justify-center items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6 smMax:[.search-open_&]:hidden" aria-label="use">
+			<button class="relative z-10 flex justify-center items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6" aria-label="use">
 				<i class="text-3xl _icon-user"></i>
 			</button>
+
 		</div>
 	</div>
 </header>

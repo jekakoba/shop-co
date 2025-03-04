@@ -32,17 +32,16 @@ function updatePlaceholder() {
 	if (!inputsPlaceholder.length) return;
 	inputsPlaceholder.forEach(input => {
 		const mobilePlaceholder = input.getAttribute('data-mobile-placeholder');
-		if (window.matchMedia("(max-width: 767px)").matches) {
+		if (window.matchMedia("(max-width: 767.98px)").matches) {
 			input.placeholder = mobilePlaceholder;
 		} else {
-			input.placeholder = "Search for products...";
+			input.placeholder = "Search...";
 		}
 	});
 }
 document.addEventListener("DOMContentLoaded", function (e) {
 	fullSearchInput();
 	searchFormClear()
-	updatePlaceholder();
 });
 
 
