@@ -9,12 +9,12 @@
     <link rel="preload" href="/fonts/Satoshi-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Satoshi-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <script type="module" crossorigin src="/js/index-Bz7SXvKH.js"></script>
+    <script type="module" crossorigin src="/js/index-D-lIzpVu.js"></script>
     <link rel="stylesheet" crossorigin href="/css/index.css">
   </head>
   <body class="font-f-primary">
     <header data-get-height="" id="header" class="fixed top-0 right-0 left-0 w-full z-50 py-[5px] bg-white">
-      <div class="container grid grid-cols-[30px_126px_auto] min-h-14 sm:min-h-24 smMax:[.search-open_&]:grid-cols-[30px_1fr] items-center sm:gap-10 lgMax:gap-3 sm:grid-cols-[30px_126px_1fr_62px] lg:grid-cols-[160px_300px_1fr_62px]">
+      <div class="container grid grid-cols-[30px_126px_auto] min-h-14 sm:min-h-24 smMax:[.search-open_&]:grid-cols-[30px_1fr_auto] items-center sm:gap-10 lgMax:gap-3 sm:grid-cols-[30px_126px_1fr_62px] lg:grid-cols-[160px_300px_1fr_62px]">
         <button class="icon-menu" type="button" aria-label="open menu" data-menu-open="">
           <span></span>
         </button>
@@ -44,20 +44,21 @@
             <button id="search-input" class="flex ml-auto w-6 h-6 text-2xl [.search-open_&]:absolute top-3 left-4 sm:absolute sm:top-3 sm:left-4 pointer-events-none" aria-label="search">
               <i class="sm:text-black/40 _icon-serach"></i>
             </button>
-            <input class="[.menu-open_&]:bg-white [.search-open_&]:block sm:text-base sm:block hidden bg-c-white-light pr-10 pl-[52px] rounded-[62px] w-full h-12 group-[.menu-open]" autocomplete="off" type="text" name="search" placeholder="Search for products...">
-            <button id="search-form-clear" class="absolute right-4 top-4 w-4 h-4" hidden type="button" aria-label="close search input">
+            <input class="[.menu-open_&]:bg-white [.search-open_&]:block sm:text-base sm:block hidden bg-c-white-light pr-10 pl-[52px] rounded-[62px] w-full h-12 group-[.menu-open]" autocomplete="off" type="text" name="search" placeholder="Search for products..." data-switch-placeholder="" data-mobile-placeholder="Search...">
+            <button id="search-form-clear" class="absolute right-4 top-4 w-4 h-4 visible" type="button" hidden aria-label="close search input">
               <i class="_icon-close"></i>
             </button>
           </label>
         </form>
-        <div class="smMax:[.search-open_&]:hidden flex gap-4 sm:gap-[14px] flex-wrap smMax:ml-auto">
+        <div class="flex gap-4 sm:gap-[14px] flex-wrap smMax:ml-auto relative z-10">
+          <button class="hidden smMax:[.search-open_&]:block" data-close-search="">Cancel</button>
           <button id="search" class="flex w-6 h-6 text-2xl [.search-open_&]:hidden sm:hidden" aria-label="search">
             <i class="_icon-serach"></i>
           </button>
-          <button class="relative z-10 flex justify-cente items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6" aria-label="shop">
+          <button class="relative z-10 flex justify-cente items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6 smMax:[.search-open_&]:hidden" aria-label="shop">
             <i class="text-3xl _icon-shop"></i>
           </button>
-          <button class="relative z-10 flex justify-center items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6" aria-label="use">
+          <button class="relative z-10 flex justify-center items-center w-6 h-6 hover:text-c-yellow transition-all duration-300 basis-6 smMax:[.search-open_&]:hidden" aria-label="use">
             <i class="text-3xl _icon-user"></i>
           </button>
         </div>
@@ -65,14 +66,14 @@
     </header>
     <div class="wrapper">
       <main class="mt-dynamic">
-        <section class="bg-c-white-light">
+        <section class="bg-c-gray">
           <div class="container pt-10 lg:pt-[103px] grid md:grid-cols-[49.3%_1fr] gap-7 md:gap-12">
             <div class="md:pb-14 lg:pb-28">
               <h1 class="h1 not-last:mb-5 md:not-last:mb-8 text-balance">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
               <p class="leading-6 not-last:mb-6 md:not-last:mb-8 lg:max-w-[545px] text-black/60">
                 Browse through our diverse range of meticulously crafted garments,
-        designed to bring out your individuality and cater to your sense of
-        style.
+				designed to bring out your individuality and cater to your sense of
+				style.
               </p>
               <button class="button hover:bg-c-yellow px-[68px] py-[14px] not-last:mb-[22px] md:not-last:mb-12 mdMax:w-full">Shop Now</button>
               <ul class="grid grid-cols-2 justify-items-center md:justify-center gap-y-3 md:gap-counter not-last:mb-[22px] md:not-last:mb-12 md:grid-cols-3">
@@ -101,8 +102,37 @@
             </div>
           </div>
         </section>
+        <section class="py-20">
+          <div class="container">
+            <div class="pt-10 pb-7 px-6 lg:py-[76px] lg:px-16 bg-c-gray rounded-primary">
+              <h2 class="text-center text-balance not-last:mb-7 lg:not-last:mb-16 font-bold font-f-secondary leading-none text-[32px] lg:text-5xl">BROWSE BY dress STYLE</h2>
+              <div class="flex flex-col gap-5 flex-wrap">
+                <div class="flex flex-col lg:flex-row lg:odd:flex-row lg:even:flex-row-reverse gap-5">
+                  <div class="lg:odd:basis-7/12 lg:even:basis-full min-h-48 sm:min-h-80 lg:min-h-72 relative overflow-hidden bg-white py-4 px-6 md:py-6 md:px-9 rounded-middle">
+                    <h3 class="text-2xl sm:text-4xl font-bold relative z-10">Casual</h3>
+                    <img class="absolute top-0 start-0 w-full h-full object-cover" src="/img/browse/image01.png" alt="image">
+                  </div>
+                  <div class="odd:basis-7/12 even:basis-full min-h-48 sm:min-h-80 lg:min-h-72 relative overflow-hidden bg-white py-4 px-6 md:py-6 md:px-9 rounded-middle">
+                    <h3 class="text-2xl sm:text-4xl font-bold relative z-10">Formal</h3>
+                    <img class="absolute top-0 start-0 w-full h-full object-cover" src="/img/browse/image02.png" alt="image">
+                  </div>
+                </div>
+                <div class="flex flex-col-reverse lg:flex-row lg:odd:flex-row lg:even:flex-row-reverse gap-5">
+                  <div class="odd:basis-7/12 even:basis-full min-h-48 sm:min-h-80 lg:min-h-72 relative overflow-hidden bg-white py-4 px-6 md:py-6 md:px-9 rounded-middle">
+                    <h3 class="text-2xl sm:text-4xl font-bold relative z-10">Gym</h3>
+                    <img class="absolute top-0 start-0 w-full h-full object-cover" src="/img/browse/image04.png" alt="image">
+                  </div>
+                  <div class="odd:basis-7/12 even:basis-full min-h-48 sm:min-h-80 lg:min-h-72 relative overflow-hidden bg-white py-4 px-6 md:py-6 md:px-9 rounded-middle">
+                    <h3 class="text-2xl sm:text-4xl font-bold relative z-10">Party</h3>
+                    <img class="absolute top-0 start-0 w-full h-full object-cover" src="/img/browse/image03.png" alt="image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer class="pt-[50px] pb-8 md:pb-16 bg-c-white-light">
+      <footer class="pt-[50px] pb-8 md:pb-16 bg-c-gray">
         <div class="container">
           <div class="pb-10 grid grid-cols-2 gap-6 border-b border-black/0.1 md:pb-[50px] lg:grid-cols-[248px_auto_auto_auto_auto] lg:footer-col-gap">
             <div class="lgMax:col-span-2">
