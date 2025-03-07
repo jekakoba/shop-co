@@ -100,7 +100,7 @@
 
 	// ========Buttons===============//
 	.button {
-		@apply bg-black rounded-big font-medium text-white  inline-flex text-center justify-center items-center transition-all duration-300 ease-linear hover:bg-c-yellow;
+		@apply bg-black rounded-big font-medium text-white flex sm:inline-flex text-center justify-center items-center transition-all duration-300 ease-linear hover:bg-c-yellow;
 		&_transparent {
 			@apply text-black border border-black/10 bg-white;
 		}
