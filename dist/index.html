@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <meta name="description" content="Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.">
     <link rel="preload" href="/fonts/icons.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/IntegralCF-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Satoshi-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Satoshi-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <script type="module" crossorigin src="/js/index-D-lIzpVu.js"></script>
+    <script type="module" crossorigin src="/js/index-BQHLB6MA.js"></script>
     <link rel="stylesheet" crossorigin href="/css/index.css">
   </head>
   <body class="font-f-primary">
-    <header data-get-height="" id="header" class="fixed top-0 right-0 left-0 w-full z-50 py-[5px] bg-white">
+    <header data-get-height="header" id="header" class="fixed top-0 right-0 left-0 w-full z-50 py-[5px] bg-white">
       <div class="container grid grid-cols-[30px_126px_auto] min-h-14 sm:min-h-24 smMax:[.search-open_&]:grid-cols-[30px_1fr_auto] items-center sm:gap-10 lgMax:gap-3 sm:grid-cols-[30px_126px_1fr_62px] lg:grid-cols-[160px_300px_1fr_62px]">
         <button class="icon-menu" type="button" aria-label="open menu" data-menu-open="">
           <span></span>
@@ -40,7 +41,7 @@
           </nav>
         </div>
         <form class="[.search-open_&]:block smMax:hidden">
-          <label class="block relative h-full">
+          <div class="block relative h-full">
             <button id="search-input" class="flex ml-auto w-6 h-6 text-2xl [.search-open_&]:absolute top-3 left-4 sm:absolute sm:top-3 sm:left-4 pointer-events-none" aria-label="search">
               <i class="sm:text-black/40 _icon-serach"></i>
             </button>
@@ -48,7 +49,7 @@
             <button id="search-form-clear" class="absolute right-4 top-4 w-4 h-4 visible" type="button" hidden aria-label="close search input">
               <i class="_icon-close"></i>
             </button>
-          </label>
+          </div>
         </form>
         <div class="flex gap-4 sm:gap-[14px] flex-wrap smMax:ml-auto relative z-10">
           <button class="hidden smMax:[.search-open_&]:block" data-close-search="">Cancel</button>
@@ -65,17 +66,17 @@
       </div>
     </header>
     <div class="wrapper">
-      <main class="mt-dynamic">
+      <main class="space-dynamic-top">
         <section class="bg-c-gray">
           <div class="container pt-10 lg:pt-[103px] grid md:grid-cols-[49.3%_1fr] gap-7 md:gap-12">
             <div class="md:pb-14 lg:pb-28">
-              <h1 class="h1 not-last:mb-5 md:not-last:mb-8 text-balance">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+              <h1 class="title h1 not-last:mb-5 md:not-last:mb-8 text-balance">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
               <p class="leading-6 not-last:mb-6 md:not-last:mb-8 lg:max-w-[545px] text-black/60">
                 Browse through our diverse range of meticulously crafted garments,
 				designed to bring out your individuality and cater to your sense of
 				style.
               </p>
-              <button class="button hover:bg-c-yellow px-[68px] py-[14px] not-last:mb-[22px] md:not-last:mb-12 mdMax:w-full">Shop Now</button>
+              <button class="button px-[68px] py-[14px] not-last:mb-[22px] md:not-last:mb-12">Shop Now</button>
               <ul class="grid grid-cols-2 justify-items-center md:justify-center gap-y-3 md:gap-counter not-last:mb-[22px] md:not-last:mb-12 md:grid-cols-3">
                 <li class="flex gap-x-7 md:gap-counter mdMax:ml-auto not-last:after:content-[''] not-last:after:w-[1px] not-last:after:basis-[1px] not-last:after:bg-black/10 not-last:after:ml-auto">
                   <div class="flex flex-col gap-2">
@@ -98,33 +99,539 @@
               </ul>
             </div>
             <div class="relative h-full mdMax:-mx-10">
-              <img class="w-full md:ibg-contain object-bottom" fetchpriority="heigh" src="/img/a-girl-and-a-guy-stand-next-to-each-other-in-denim-jackets-removebg-preview.png" alt="a girl and a guy stand next to each other in denim jackets">
+              <img class="w-full md:ibg-contain object-bottom" fetchpriority="high" src="/img/a-girl-and-a-guy-stand-next-to-each-other-in-denim-jackets-removebg-preview.png" alt="a girl and a guy stand next to each other in denim jackets">
             </div>
           </div>
         </section>
-        <section class="py-20">
+        <section class="bg-black py-5 md:py-10">
+          <h2 class="sr-only">Brands</h2>
+          <div class="flex items-center" data-marquee="" data-marquee-speed="250" data-marquee-space="50">
+            <div class="aspect-3/1">
+              <img class="w-full max-h-9 object-contain" width="208" height="34" src="/img/brands/versace.svg" alt="versace">
+            </div>
+            <div class="aspect-3/1">
+              <img class="w-full max-h-9 object-contain" width="208" height="34" src="/img/brands/zara.svg" alt="zara">
+            </div>
+            <div class="aspect-3/1">
+              <img class="w-full max-h-9 object-contain" width="208" height="34" src="/img/brands/gucci.svg" alt="gucci">
+            </div>
+            <div class="aspect-3/1">
+              <img class="w-full max-h-9 object-contain" width="208" height="34" src="/img/brands/prada.svg" alt="prada">
+            </div>
+            <div class="aspect-3/1">
+              <img class="w-full max-h-9 object-contain" width="208" height="34" src="/img/brands/calvin-klein.svg" alt="calvin-klein">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container flex flex-col border-b border-black/10 py-10 md:py-16">
+            <h2 class="title h2 text-center not-last:mb-8 md:not-last:mb-14">NEW ARRIVALS</h2>
+            <ul class="flex flex-row -me-4 pe-4 sm:pe-0 sm:me-0 gap-x-4 pb-2 sm:pb-0 overflow-x-auto sm:grid sm:grid-cols-2 sm:gap-y-7 sm:gap-x-5 lg:grid-cols-4 not-last:mb-6 sm:not-last:mb-9">
+              <li class="basis-[200px] shrink-0 sm:basis-auto">
+                <a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+                  <img class="hover:scale-105 w-full h-full object-scale-down transition-all duration-500 ease-linear" width="295" height="295" src="/img/products/product05.png" alt="product">
+                </a>
+                <div class="flex flex-col items-start gap-1 sm:gap-2">
+                  <a href="#">
+                    <h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">T-shirt with tape details</h3>
+                  </a>
+                  <div class="flex items-center gap-x-2" data-rating="" data-rating-value="5.0">
+                    <div class="flex items-center sm:gap-x-2">
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                    </div>
+                    <p class="text-xs sm:text-[14px]">
+                      <span>5.0</span>
+                      /
+                      <span class="text-black/40">5</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+                    <p class="text-xl sm:text-2xl font-bold">
+                      <span>$</span>
+                      120
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="basis-[200px] shrink-0 sm:basis-auto">
+                <a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+                  <img class="hover:scale-105 w-full h-full object-scale-down transition-all duration-500 ease-linear" width="295" height="295" src="/img/products/product06.png" alt="product">
+                </a>
+                <div class="flex flex-col items-start gap-1 sm:gap-2">
+                  <a href="#">
+                    <h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Skinny fit jeans</h3>
+                  </a>
+                  <div class="flex items-center gap-x-2" data-rating="" data-rating-value="3.5">
+                    <div class="flex items-center sm:gap-x-2">
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                    </div>
+                    <p class="text-xs sm:text-[14px]">
+                      <span>3.5</span>
+                      /
+                      <span class="text-black/40">5</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+                    <p class="text-xl sm:text-2xl font-bold">
+                      <span>$</span>
+                      240
+                    </p>
+                    <p class="text-xl sm:text-2xl text-black/40 font-bold line-through">
+                      <span>$</span>
+                      260
+                    </p>
+                    <p class="text-[10px] sm:text-xs text-c-red font-medium flex items-center justify-center text-center px-[8px] py-[3px] sm:px-[14px] min-h-5 sm:min-h-7 rounded-big bg-discount">-20%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="basis-[200px] shrink-0 sm:basis-auto">
+                <a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+                  <img class="hover:scale-105 w-full h-full object-scale-down transition-all duration-500 ease-linear" width="295" height="295" src="/img/products/product07.png" alt="product">
+                </a>
+                <div class="flex flex-col items-start gap-1 sm:gap-2">
+                  <a href="#">
+                    <h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Checkered Shirt</h3>
+                  </a>
+                  <div class="flex items-center gap-x-2" data-rating="" data-rating-value="4.0">
+                    <div class="flex items-center sm:gap-x-2">
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                    </div>
+                    <p class="text-xs sm:text-[14px]">
+                      <span>4.0</span>
+                      /
+                      <span class="text-black/40">5</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+                    <p class="text-xl sm:text-2xl font-bold">
+                      <span>$</span>
+                      180
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="basis-[200px] shrink-0 sm:basis-auto">
+                <a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+                  <img class="hover:scale-105 w-full h-full object-scale-down transition-all duration-500 ease-linear" width="295" height="295" src="/img/products/product08.png" alt="product">
+                </a>
+                <div class="flex flex-col items-start gap-1 sm:gap-2">
+                  <a href="#">
+                    <h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Sleveve Striped T-shirt</h3>
+                  </a>
+                  <div class="flex items-center gap-x-2" data-rating="" data-rating-value="4.0">
+                    <div class="flex items-center sm:gap-x-2">
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                    </div>
+                    <p class="text-xs sm:text-[14px]">
+                      <span>4.0</span>
+                      /
+                      <span class="text-black/40">5</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+                    <p class="text-xl sm:text-2xl font-bold">
+                      <span>$</span>
+                      130
+                    </p>
+                    <p class="text-xl sm:text-2xl text-black/40 font-bold line-through">
+                      <span>$</span>
+                      160
+                    </p>
+                    <p class="text-[10px] sm:text-xs text-c-red font-medium flex items-center justify-center text-center px-[8px] py-[3px] sm:px-[14px] min-h-5 sm:min-h-7 rounded-big bg-discount">-30%</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="button button_transparent sm:self-center px-20 py-[14px]">View All</button>
+          </div>
+        </section>
+        <section>
+          <div class="container flex flex-col pt-14 md:pt-16 pb-[25px] md:pb-10">
+            <h2 class="title h2 text-center not-last:mb-8 md:not-last:mb-14">TOP SELLING</h2>
+            <ul class="flex flex-row -me-4 pe-4 sm:pe-0 sm:me-0 gap-x-4 pb-2 sm:pb-0 overflow-x-auto sm:grid sm:grid-cols-2 sm:gap-y-7 sm:gap-x-5 lg:grid-cols-4 not-last:mb-6 sm:not-last:mb-9">
+              <li class="basis-[200px] shrink-0 sm:basis-auto">
+                <a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+                  <img class="hover:scale-105 w-full h-full object-scale-down transition-all duration-500 ease-linear" width="295" height="295" src="/img/products/product01.png" alt="product">
+                </a>
+                <div class="flex flex-col items-start gap-1 sm:gap-2">
+                  <a href="#">
+                    <h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Vertical Striped Shirt</h3>
+                  </a>
+                  <div class="flex items-center gap-x-2" data-rating="" data-rating-value="5.0">
+                    <div class="flex items-center sm:gap-x-2">
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                    </div>
+                    <p class="text-xs sm:text-[14px]">
+                      <span>5.0</span>
+                      /
+                      <span class="text-black/40">5</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+                    <p class="text-xl sm:text-2xl font-bold">
+                      <span>$</span>
+                      212
+                    </p>
+                    <p class="text-xl sm:text-2xl text-black/40 font-bold line-through">
+                      <span>$</span>
+                      232
+                    </p>
+                    <p class="text-[10px] sm:text-xs text-c-red font-medium flex items-center justify-center text-center px-[8px] py-[3px] sm:px-[14px] min-h-5 sm:min-h-7 rounded-big bg-discount">-20%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="basis-[200px] shrink-0 sm:basis-auto">
+                <a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+                  <img class="hover:scale-105 w-full h-full object-scale-down transition-all duration-500 ease-linear" width="295" height="295" src="/img/products/product02.png" alt="product">
+                </a>
+                <div class="flex flex-col items-start gap-1 sm:gap-2">
+                  <a href="#">
+                    <h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Courage Graphic T-shirt</h3>
+                  </a>
+                  <div class="flex items-center gap-x-2" data-rating="" data-rating-value="4.0">
+                    <div class="flex items-center sm:gap-x-2">
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                    </div>
+                    <p class="text-xs sm:text-[14px]">
+                      <span>4.0</span>
+                      /
+                      <span class="text-black/40">5</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+                    <p class="text-xl sm:text-2xl font-bold">
+                      <span>$</span>
+                      145
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="basis-[200px] shrink-0 sm:basis-auto">
+                <a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+                  <img class="hover:scale-105 w-full h-full object-scale-down transition-all duration-500 ease-linear" width="295" height="295" src="/img/products/product03.png" alt="product">
+                </a>
+                <div class="flex flex-col items-start gap-1 sm:gap-2">
+                  <a href="#">
+                    <h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Loose Fit Bermuda Shorts</h3>
+                  </a>
+                  <div class="flex items-center gap-x-2" data-rating="" data-rating-value="3.0">
+                    <div class="flex items-center sm:gap-x-2">
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                    </div>
+                    <p class="text-xs sm:text-[14px]">
+                      <span>3.0</span>
+                      /
+                      <span class="text-black/40">5</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+                    <p class="text-xl sm:text-2xl font-bold">
+                      <span>$</span>
+                      80
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="basis-[200px] shrink-0 sm:basis-auto">
+                <a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+                  <img class="hover:scale-105 w-full h-full object-scale-down transition-all duration-500 ease-linear" width="295" height="295" src="/img/products/product04.png" alt="product">
+                </a>
+                <div class="flex flex-col items-start gap-1 sm:gap-2">
+                  <a href="#">
+                    <h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Faded Skinny Jeans</h3>
+                  </a>
+                  <div class="flex items-center gap-x-2" data-rating="" data-rating-value="4.3">
+                    <div class="flex items-center sm:gap-x-2">
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                      <svg class="w-4 h-3 sm:w-[19px] sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 17" fill="none">
+                        <path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633"></path>
+                      </svg>
+                    </div>
+                    <p class="text-xs sm:text-[14px]">
+                      <span>4.3</span>
+                      /
+                      <span class="text-black/40">5</span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+                    <p class="text-xl sm:text-2xl font-bold">
+                      <span>$</span>
+                      210
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="button button_transparent sm:self-center px-20 py-[14px]">View All</button>
+          </div>
+        </section>
+        <section class="pt-[25px] pb-[25px] md:py-12">
           <div class="container">
-            <div class="pt-10 pb-7 px-6 lg:py-[76px] lg:px-16 bg-c-gray rounded-primary">
-              <h2 class="text-center text-balance not-last:mb-7 lg:not-last:mb-16 font-bold font-f-secondary leading-none text-[32px] lg:text-5xl">BROWSE BY dress STYLE</h2>
+            <div class="pt-10 pb-7 px-6 lg:py-[76px] lg:px-16 bg-c-gray rounded-middle md:rounded-primary">
+              <h2 class="title h2 text-center not-last:mb-7 lg:not-last:mb-16">BROWSE BY dress STYLE</h2>
               <div class="flex flex-col gap-5 flex-wrap">
                 <div class="flex flex-col lg:flex-row lg:odd:flex-row lg:even:flex-row-reverse gap-5">
                   <div class="lg:odd:basis-7/12 lg:even:basis-full min-h-48 sm:min-h-80 lg:min-h-72 relative overflow-hidden bg-white py-4 px-6 md:py-6 md:px-9 rounded-middle">
                     <h3 class="text-2xl sm:text-4xl font-bold relative z-10">Casual</h3>
-                    <img class="absolute top-0 start-0 w-full h-full object-cover" src="/img/browse/image01.png" alt="image">
+                    <img class="absolute top-0 start-0 w-full h-full object-cover" width="410" height="288" src="/img/browse/image01.png" alt="image">
                   </div>
                   <div class="odd:basis-7/12 even:basis-full min-h-48 sm:min-h-80 lg:min-h-72 relative overflow-hidden bg-white py-4 px-6 md:py-6 md:px-9 rounded-middle">
                     <h3 class="text-2xl sm:text-4xl font-bold relative z-10">Formal</h3>
-                    <img class="absolute top-0 start-0 w-full h-full object-cover" src="/img/browse/image02.png" alt="image">
+                    <img class="absolute top-0 start-0 w-full h-full object-cover" width="681" height="288" src="/img/browse/image02.png" alt="image">
                   </div>
                 </div>
                 <div class="flex flex-col-reverse lg:flex-row lg:odd:flex-row lg:even:flex-row-reverse gap-5">
                   <div class="odd:basis-7/12 even:basis-full min-h-48 sm:min-h-80 lg:min-h-72 relative overflow-hidden bg-white py-4 px-6 md:py-6 md:px-9 rounded-middle">
                     <h3 class="text-2xl sm:text-4xl font-bold relative z-10">Gym</h3>
-                    <img class="absolute top-0 start-0 w-full h-full object-cover" src="/img/browse/image04.png" alt="image">
+                    <img class="absolute top-0 start-0 w-full h-full object-cover" width="681" height="288" src="/img/browse/image04.png" alt="image">
                   </div>
                   <div class="odd:basis-7/12 even:basis-full min-h-48 sm:min-h-80 lg:min-h-72 relative overflow-hidden bg-white py-4 px-6 md:py-6 md:px-9 rounded-middle">
                     <h3 class="text-2xl sm:text-4xl font-bold relative z-10">Party</h3>
-                    <img class="absolute top-0 start-0 w-full h-full object-cover" src="/img/browse/image03.png" alt="image">
+                    <img class="absolute top-0 start-0 w-full h-full object-cover" width="410" height="288" src="/img/browse/image03.png" alt="image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-[25px] py-12">
+          <div class="container">
+            <div class="flex gap-x-5 not-last:mb-6 md:not-last:mb-10">
+              <h2 class="title h2 grow">OUR HAPPY CUSTOMERS</h2>
+              <div class="flex items-center gap-x-4 self-end">
+                <button data-prev-customers-slide="" class="_icon-arrow-slider cursor-pointer hover:text-c-yellow transition-all duration-300 [&.swiper-button-disabled]:opacity-30 [&.swiper-button-disabled]:pointer-events-none" type="button" aria-label="The previous slide"></button>
+                <button data-next-customers-slide="" class="_icon-arrow-slider cursor-pointer rotate-180 hover:text-c-yellow transition-all duration-300 [&.swiper-button-disabled]:opacity-30 [&.swiper-button-disabled]:pointer-events-none" type="button" aria-label="The next slide"></button>
+              </div>
+            </div>
+            <div class="customers swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="h-full p-6 sm:px-8 sm:py-7 rounded-middle border border-black/10">
+                    <div class="flex gap-x-1 items-center not-last:mb-3 sm:not-last:mb-4">
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                    </div>
+                    <div class="flex items-center gap-x-1 mb-3 sm:not-last:mb-4">
+                      <span class="text-xl font-bold leading-tight">Sarah M.</span>
+                      <i class="w-5 h-5">
+                        <img class="w-full h-full object-contain" src="/img/icons/check.svg" width="20" height="20" alt="check">
+                      </i>
+                    </div>
+                    <blockquote class="text-black/60 leading-snug line-clamp-6">
+                      &quot;I&#039;m blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I&#039;ve bought has exceeded my expectations.&quot;
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="h-full p-6 sm:px-8 sm:py-7 rounded-middle border border-black/10">
+                    <div class="flex gap-x-1 items-center not-last:mb-3 sm:not-last:mb-4">
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                    </div>
+                    <div class="flex items-center gap-x-1 mb-3 sm:not-last:mb-4">
+                      <span class="text-xl font-bold leading-tight">Alex K.</span>
+                      <i class="w-5 h-5">
+                        <img class="w-full h-full object-contain" src="/img/icons/check.svg" width="20" height="20" alt="check">
+                      </i>
+                    </div>
+                    <blockquote class="text-black/60 leading-snug line-clamp-6">
+                      &quot;Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.&quot;
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="h-full p-6 sm:px-8 sm:py-7 rounded-middle border border-black/10">
+                    <div class="flex gap-x-1 items-center not-last:mb-3 sm:not-last:mb-4">
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                    </div>
+                    <div class="flex items-center gap-x-1 mb-3 sm:not-last:mb-4">
+                      <span class="text-xl font-bold leading-tight">James L.</span>
+                      <i class="w-5 h-5">
+                        <img class="w-full h-full object-contain" src="/img/icons/check.svg" width="20" height="20" alt="check">
+                      </i>
+                    </div>
+                    <blockquote class="text-black/60 leading-snug line-clamp-6">
+                      &quot;As someone who&#039;s always on the lookout for unique fashion pieces, I&#039;m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.&quot;
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="h-full p-6 sm:px-8 sm:py-7 rounded-middle border border-black/10">
+                    <div class="flex gap-x-1 items-center not-last:mb-3 sm:not-last:mb-4">
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                    </div>
+                    <div class="flex items-center gap-x-1 mb-3 sm:not-last:mb-4">
+                      <span class="text-xl font-bold leading-tight">Mooen R.</span>
+                      <i class="w-5 h-5">
+                        <img class="w-full h-full object-contain" src="/img/icons/check.svg" width="20" height="20" alt="check">
+                      </i>
+                    </div>
+                    <blockquote class="text-black/60 leading-snug line-clamp-6">
+                      &quot;As someone who&#039;s always on the lookout for unique fashion pieces, I&#039;m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.&quot;
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="h-full p-6 sm:px-8 sm:py-7 rounded-middle border border-black/10">
+                    <div class="flex gap-x-1 items-center not-last:mb-3 sm:not-last:mb-4">
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                    </div>
+                    <div class="flex items-center gap-x-1 mb-3 sm:not-last:mb-4">
+                      <span class="text-xl font-bold leading-tight">Emma T.</span>
+                      <i class="w-5 h-5">
+                        <img class="w-full h-full object-contain" src="/img/icons/check.svg" width="20" height="20" alt="check">
+                      </i>
+                    </div>
+                    <blockquote class="text-black/60 leading-snug line-clamp-6">
+                      &quot;Shop.co has completely transformed my wardrobe! The attention to detail in their designs and the perfect fit of every item make shopping there an absolute delight.&quot;
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="h-full p-6 sm:px-8 sm:py-7 rounded-middle border border-black/10">
+                    <div class="flex gap-x-1 items-center not-last:mb-3 sm:not-last:mb-4">
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                      <i class="_icon-star text-c-yellow"></i>
+                    </div>
+                    <div class="flex items-center gap-x-1 mb-3 sm:not-last:mb-4">
+                      <span class="text-xl font-bold leading-tight">Liam P.</span>
+                      <i class="w-5 h-5">
+                        <img class="w-full h-full object-contain" src="/img/icons/check.svg" width="20" height="20" alt="check">
+                      </i>
+                    </div>
+                    <blockquote class="text-black/60 leading-snug line-clamp-6">
+                      &quot;I love how Shop.co blends comfort with cutting-edge fashion. Every purchase feels like a statement piece, and I’m always excited to see what’s new in their collection.&quot;
+                    </blockquote>
                   </div>
                 </div>
               </div>
@@ -132,129 +639,149 @@
           </div>
         </section>
       </main>
-      <footer class="pt-[50px] pb-8 md:pb-16 bg-c-gray">
-        <div class="container">
-          <div class="pb-10 grid grid-cols-2 gap-6 border-b border-black/0.1 md:pb-[50px] lg:grid-cols-[248px_auto_auto_auto_auto] lg:footer-col-gap">
-            <div class="lgMax:col-span-2">
-              <div class="w-[163px] h-6 mb-[14px] lg:mb-6">
-                <img class="w-full h-full object-contain object-left" src="/img/logo.svg" alt="logo">
+      <footer>
+        <div class="subscribe-block bg-gradient-to-b from-white to-c-gray from-50% to-50%">
+          <div class="container">
+            <div class="px-6 py-6 lg:py-9 lg:px-16 bg-black rounded-primary flex flex-col md:flex-row md:items-center justify-between gap-8 md:gap-5">
+              <div class="basis-2/4">
+                <h2 class="title h2 h2_small leading-10 text-white">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
               </div>
-              <p class="text-[14px] not-last:mb-5 not-last:lg:mb-9">
-                We have clothes that suits your style and which you’re proud to wear. From women to men.
-              </p>
-              <div class="flex flex-wrap gap-3">
-                <a class="flex justify-center items-center text-base w-10 h-10 border border-black/0.3 rounded-full bg-white hover:bg-black hover:border-black hover:text-white transition-all duration-300" href="#" aria-label="twitter">
-                  <i class="_icon-twitter"></i>
-                </a>
-                <a class="flex justify-center items-center text-base w-10 h-10 border border-black/0.3 rounded-full bg-white hover:bg-black hover:border-black hover:text-white transition-all duration-300" href="#" aria-label="twitter">
-                  <i class="_icon-facebook"></i>
-                </a>
-                <a class="flex justify-center items-center text-base w-10 h-10border border-black/0.3 rounded-full bg-white hover:bg-black hover:border-black hover:text-white transition-all duration-300" href="#" aria-label="twitter">
-                  <i class="_icon-instagram"></i>
-                </a>
-                <a class="flex justify-center items-center text-base w-10 h-10 border border-black/0.3 rounded-full bg-white hover:bg-black hover:border-black hover:text-white transition-all duration-300" href="#" aria-label="twitter">
-                  <i class="_icon-github"></i>
-                </a>
+              <div class="flex flex-col gap-[14px] md:basis-[31.48%] md:min-w-80">
+                <form>
+                  <label class="block relative h-full">
+                    <i class="flex w-6 h-6 absolute top-4 md:top-3 left-4 pointer-events-none text-black/40 _icon-mail text-sm md:text-xl"></i>
+                    <input class="sm:text-base sm:block bg-c-white-light pr-10 pl-11 md:pl-[52px] rounded-[62px] w-full h-12" autocomplete="off" type="text" name="search" placeholder="Enter your email address">
+                  </label>
+                </form>
+                <button class="button bg-white text-black px-5 md:px-[68px] py-2 min-h-[48px] md:min-h-[46px]">Subscribe to Newsletter</button>
               </div>
             </div>
-            <nav class="text-[14px] sm:text-base">
-              <h3 class="mb-4 uppercase leading-4 font-medium tracking-[0.1875em] sm:mb-[26px]">Company</h3>
-              <ul class="grid gap-4">
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">About</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Features</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Works</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Career</a>
-                </li>
-              </ul>
-            </nav>
-            <nav class="text-[14px] sm:text-base">
-              <h3 class="mb-4 uppercase leading-4 font-medium tracking-[0.1875em] sm:mb-[26px]">HELP</h3>
-              <ul class="grid gap-4">
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Customer Support</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Delivery Details</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Privacy Policy</a>
-                </li>
-              </ul>
-            </nav>
-            <nav class="text-[14px] sm:text-base">
-              <h3 class="mb-4 uppercase leading-4 font-medium tracking-[0.1875em] sm:mb-[26px]">FAQ</h3>
-              <ul class="grid gap-4">
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Account</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Manage Deliveries</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Orders</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Payments</a>
-                </li>
-              </ul>
-            </nav>
-            <nav class="text-[14px] sm:text-base">
-              <h3 class="mb-4 uppercase leading-4 font-medium tracking-[0.1875em] sm:mb-[26px]">RESOURCES</h3>
-              <ul class="grid gap-4">
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Free eBooks</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Development Tutorial</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">How to - Blog</a>
-                </li>
-                <li>
-                  <a class="leading-4 text-black/60 hover:underline" href="#">Youtube Playlist</a>
-                </li>
-              </ul>
-            </nav>
           </div>
-          <div class="grid justify-center md:grid-cols-[350px_1fr] mdMax:text-center gap-4 pt-4 sm:pt-6 pb-6">
-            <p class="text-[14px]">Shop.co © 2000-2023, All Rights Reserved</p>
-            <ul class="flex flex-wrap gap-3 md:ml-auto">
-              <li>
-                <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="visa" href="#">
-                  <img class="w-8 h-4 object-contain" src="/img/payments/visa.png" alt="visa">
-                </a>
-              </li>
-              <li>
-                <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="mastercard" href="#">
-                  <img class="w-8 h-4 object-contain" src="/img/payments/mastercard.png" alt="mastercard">
-                </a>
-              </li>
-              <li>
-                <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="paypal" href="#">
-                  <img class="w-8 h-4 object-contain" src="/img/payments/paypal.png" alt="paypal">
-                </a>
-              </li>
-              <li>
-                <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="apple pay" href="#">
-                  <img class="w-8 h-4 object-contain" src="/img/payments/apple-pay.png" alt="apple pay">
-                </a>
-              </li>
-              <li>
-                <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="google pay" href="#">
-                  <img class="w-8 h-4 object-contain" src="/img/payments/g-pay.png" alt="google pay">
-                </a>
-              </li>
-            </ul>
+        </div>
+        <div class="bg-c-gray pb-8 md:pb-16 pt-8 md:pt-[50px]">
+          <div class="container">
+            <div class="pb-10 grid grid-cols-2 gap-6 border-b border-black/0.1 md:pb-[50px] lg:grid-cols-[248px_auto_auto_auto_auto] lg:footer-col-gap">
+              <div class="lgMax:col-span-2">
+                <div class="w-[163px] h-6 mb-[14px] lg:mb-6">
+                  <img class="w-full h-full object-contain object-left" src="/img/logo.svg" alt="logo">
+                </div>
+                <p class="text-[14px] not-last:mb-5 not-last:lg:mb-9">
+                  We have clothes that suits your style and which you’re proud to wear. From women to men.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                  <a class="flex justify-center items-center text-base w-10 h-10 border border-black/0.3 rounded-full bg-white hover:bg-black hover:border-black hover:text-white transition-all duration-300" href="#" aria-label="twitter">
+                    <i class="_icon-twitter"></i>
+                  </a>
+                  <a class="flex justify-center items-center text-base w-10 h-10 border border-black/0.3 rounded-full bg-white hover:bg-black hover:border-black hover:text-white transition-all duration-300" href="#" aria-label="twitter">
+                    <i class="_icon-facebook"></i>
+                  </a>
+                  <a class="flex justify-center items-center text-base w-10 h-10border border-black/0.3 rounded-full bg-white hover:bg-black hover:border-black hover:text-white transition-all duration-300" href="#" aria-label="twitter">
+                    <i class="_icon-instagram"></i>
+                  </a>
+                  <a class="flex justify-center items-center text-base w-10 h-10 border border-black/0.3 rounded-full bg-white hover:bg-black hover:border-black hover:text-white transition-all duration-300" href="#" aria-label="twitter">
+                    <i class="_icon-github"></i>
+                  </a>
+                </div>
+              </div>
+              <nav class="text-[14px] sm:text-base">
+                <h3 class="mb-4 uppercase leading-4 font-medium tracking-[0.1875em] sm:mb-[26px]">Company</h3>
+                <ul class="grid gap-4">
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Features</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Works</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Career</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="text-[14px] sm:text-base">
+                <h3 class="mb-4 uppercase leading-4 font-medium tracking-[0.1875em] sm:mb-[26px]">HELP</h3>
+                <ul class="grid gap-4">
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Customer Support</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Delivery Details</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="text-[14px] sm:text-base">
+                <h3 class="mb-4 uppercase leading-4 font-medium tracking-[0.1875em] sm:mb-[26px]">FAQ</h3>
+                <ul class="grid gap-4">
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Account</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Manage Deliveries</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Orders</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Payments</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="text-[14px] sm:text-base">
+                <h3 class="mb-4 uppercase leading-4 font-medium tracking-[0.1875em] sm:mb-[26px]">RESOURCES</h3>
+                <ul class="grid gap-4">
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Free eBooks</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Development Tutorial</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">How to - Blog</a>
+                  </li>
+                  <li>
+                    <a class="leading-4 text-black/60 hover:underline" href="#">Youtube Playlist</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="grid justify-center md:grid-cols-[350px_1fr] mdMax:text-center gap-4 pt-4 sm:pt-6 pb-6">
+              <p class="text-[14px]">Shop.co © 2000-2023, All Rights Reserved</p>
+              <ul class="flex flex-wrap gap-3 md:ml-auto">
+                <li>
+                  <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="visa" href="#">
+                    <img class="w-8 h-4 object-contain" src="/img/payments/visa.png" alt="visa">
+                  </a>
+                </li>
+                <li>
+                  <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="mastercard" href="#">
+                    <img class="w-8 h-4 object-contain" src="/img/payments/mastercard.png" alt="mastercard">
+                  </a>
+                </li>
+                <li>
+                  <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="paypal" href="#">
+                    <img class="w-8 h-4 object-contain" src="/img/payments/paypal.png" alt="paypal">
+                  </a>
+                </li>
+                <li>
+                  <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="apple pay" href="#">
+                    <img class="w-8 h-4 object-contain" src="/img/payments/apple-pay.png" alt="apple pay">
+                  </a>
+                </li>
+                <li>
+                  <a class="w-[46px] h-[30px] bg-white border border-black/0.3 rounded-md flex justify-center items-center" aria-label="google pay" href="#">
+                    <img class="w-8 h-4 object-contain" src="/img/payments/g-pay.png" alt="google pay">
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
