@@ -1,0 +1,20 @@
+<section class="py-12 md:py-10">
+	<div class="container">
+		<div class="flex  gap-x-5 not-last:mb-6 md:not-last:mb-10">
+			<h2 class="title h2 grow">OUR HAPPY CUSTOMERS</h2>
+			<div class="flex items-center gap-x-4 self-end">
+				<button data-prev-customers-slide class="_icon-arrow-slider cursor-pointer hover:text-c-yellow transition-all duration-300" type="button" aria-label="The previous slide"></button>
+				<button data-next-customers-slide class="_icon-arrow-slider cursor-pointer rotate-180 hover:text-c-yellow transition-all duration-300" type="button" aria-label="The next slide"></button>
+			</div>
+		</div>
+		<div class="customers swiper">
+			<div class="swiper-wrapper">
+				<fetch url="@c/customers/customers.json">
+					<each loop="customer, index in response">
+						<include src="@c/customers/_customers-item.html"></include>
+					</each>
+				</fetch>
+			</div>
+		</div>
+	</div>
+</section>

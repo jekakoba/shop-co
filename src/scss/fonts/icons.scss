@@ -16,17 +16,20 @@
 
 
 :root {
---_icon-arrow: "\ea01";
---_icon-close: "\ea02";
---_icon-facebook: "\ea03";
---_icon-github: "\ea04";
---_icon-instagram: "\ea05";
---_icon-mail: "\ea06";
---_icon-serach: "\ea07";
---_icon-shop: "\ea08";
---_icon-twitter: "\ea09";
---_icon-user: "\ea0a";
+--_icon-arrow-slider: "\ea01";
+--_icon-arrow: "\ea02";
+--_icon-close: "\ea03";
+--_icon-facebook: "\ea04";
+--_icon-github: "\ea05";
+--_icon-instagram: "\ea06";
+--_icon-mail: "\ea07";
+--_icon-serach: "\ea08";
+--_icon-shop: "\ea09";
+--_icon-star: "\ea0a";
+--_icon-twitter: "\ea0b";
+--_icon-user: "\ea0c";
 }
+._icon-arrow-slider:before { content: var(--_icon-arrow-slider); }
 ._icon-arrow:before { content: var(--_icon-arrow); }
 ._icon-close:before { content: var(--_icon-close); }
 ._icon-facebook:before { content: var(--_icon-facebook); }
@@ -35,17 +38,20 @@
 ._icon-mail:before { content: var(--_icon-mail); }
 ._icon-serach:before { content: var(--_icon-serach); }
 ._icon-shop:before { content: var(--_icon-shop); }
+._icon-star:before { content: var(--_icon-star); }
 ._icon-twitter:before { content: var(--_icon-twitter); }
 ._icon-user:before { content: var(--_icon-user); }
 
 
-$_icon-arrow: '\ea01';
-$_icon-close: '\ea02';
-$_icon-facebook: '\ea03';
-$_icon-github: '\ea04';
-$_icon-instagram: '\ea05';
-$_icon-mail: '\ea06';
-$_icon-serach: '\ea07';
-$_icon-shop: '\ea08';
-$_icon-twitter: '\ea09';
-$_icon-user: '\ea0a';
+$_icon-arrow-slider: '\ea01';
+$_icon-arrow: '\ea02';
+$_icon-close: '\ea03';
+$_icon-facebook: '\ea04';
+$_icon-github: '\ea05';
+$_icon-instagram: '\ea06';
+$_icon-mail: '\ea07';
+$_icon-serach: '\ea08';
+$_icon-shop: '\ea09';
+$_icon-star: '\ea0a';
+$_icon-twitter: '\ea0b';
+$_icon-user: '\ea0c';

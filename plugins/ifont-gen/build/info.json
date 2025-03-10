@@ -1,62 +1,74 @@
 {
-  "arrow": {
+  "arrow-slider": {
     "encodedCode": "\\ea01",
     "prefix": "_icon",
-    "className": "_icon-arrow",
+    "className": "_icon-arrow-slider",
     "unicode": "&#59905;"
   },
-  "close": {
+  "arrow": {
     "encodedCode": "\\ea02",
     "prefix": "_icon",
-    "className": "_icon-close",
+    "className": "_icon-arrow",
     "unicode": "&#59906;"
   },
-  "facebook": {
+  "close": {
     "encodedCode": "\\ea03",
     "prefix": "_icon",
-    "className": "_icon-facebook",
+    "className": "_icon-close",
     "unicode": "&#59907;"
   },
-  "github": {
+  "facebook": {
     "encodedCode": "\\ea04",
     "prefix": "_icon",
-    "className": "_icon-github",
+    "className": "_icon-facebook",
     "unicode": "&#59908;"
   },
-  "instagram": {
+  "github": {
     "encodedCode": "\\ea05",
     "prefix": "_icon",
-    "className": "_icon-instagram",
+    "className": "_icon-github",
     "unicode": "&#59909;"
   },
-  "mail": {
+  "instagram": {
     "encodedCode": "\\ea06",
     "prefix": "_icon",
-    "className": "_icon-mail",
+    "className": "_icon-instagram",
     "unicode": "&#59910;"
   },
-  "serach": {
+  "mail": {
     "encodedCode": "\\ea07",
     "prefix": "_icon",
-    "className": "_icon-serach",
+    "className": "_icon-mail",
     "unicode": "&#59911;"
   },
-  "shop": {
+  "serach": {
     "encodedCode": "\\ea08",
     "prefix": "_icon",
-    "className": "_icon-shop",
+    "className": "_icon-serach",
     "unicode": "&#59912;"
   },
-  "twitter": {
+  "shop": {
     "encodedCode": "\\ea09",
     "prefix": "_icon",
-    "className": "_icon-twitter",
+    "className": "_icon-shop",
     "unicode": "&#59913;"
   },
-  "user": {
+  "star": {
     "encodedCode": "\\ea0a",
     "prefix": "_icon",
-    "className": "_icon-user",
+    "className": "_icon-star",
     "unicode": "&#59914;"
+  },
+  "twitter": {
+    "encodedCode": "\\ea0b",
+    "prefix": "_icon",
+    "className": "_icon-twitter",
+    "unicode": "&#59915;"
+  },
+  "user": {
+    "encodedCode": "\\ea0c",
+    "prefix": "_icon",
+    "className": "_icon-user",
+    "unicode": "&#59916;"
   }
 }
