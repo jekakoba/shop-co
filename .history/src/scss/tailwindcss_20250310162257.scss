@@ -108,7 +108,7 @@
 
 	//=============Counter==============//
 	.counter-title {
-		@include adaptiveValue("font-size", 40, 20, 0, $containerWidth, 767.98);
+		@include adaptiveValue("font-size", 20, 20, 0, $containerWidth, 767.98);
 	}
 	.counter-text {
 		@include adaptiveValue("font-size", 16, 10, 0, $containerWidth, 767.98);

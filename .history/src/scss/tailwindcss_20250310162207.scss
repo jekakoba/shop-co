@@ -114,7 +114,7 @@
 		@include adaptiveValue("font-size", 16, 10, 0, $containerWidth, 767.98);
 	}
 	.gap-counter {
-		@include adaptiveValue("gap", 20, 10, 0, $containerWidth, 767.98);
+		@include adaptiveValue("gap", 0, 10, 0, $containerWidth, 767.98);
 	}
 
 	//=========Footer================//
