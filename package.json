@@ -43,6 +43,7 @@
     "@vituum/vite-plugin-posthtml": "^1.1.0",
     "defu": "^6.1.4",
     "flatten-js": "^0.6.9",
+    "flowbite": "^3.1.2",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^10.0.0",
     "imagemin-webp": "^8.0.0",

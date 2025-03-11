@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<include src="@h/other/_head.html" locals='{
+	"pageTitle": "Product detail",
+	"meta": "Product detail."
+}'>
+</include>
+
+<body class="font-f-primary">
+	<include src="./src/html/components/header/_header.html"></include>
+	<div class="wrapper">
+		<main class="space-dynamic-top pb-5 md:pb-10">
+			<div class="container pt-6 pb-10">
+				<nav class="overflow-x-auto whitespace-nowrap pb-2" aria-label="Breadcrumb">
+					<ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+						<li class="inline-flex flex-row items-center">
+							<a class="text-black/60 hover:text-c-yellow transition-all duration-300" href="#">Home</a>
+							<svg class="rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path
+									d="M6.53073 2.46937L11.5307 7.46937C11.6007 7.53905 11.6561 7.62184 11.694 7.71301C11.7318 7.80417 11.7513 7.90191 11.7513 8.00062C11.7513 8.09933 11.7318 8.19707 11.694 8.28824C11.6561 8.3794 11.6007 8.46219 11.5307 8.53187L6.53073 13.5319C6.38984 13.6728 6.19874 13.7519 5.99948 13.7519C5.80023 13.7519 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0006C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8L5.46761 3.53062C5.32671 3.38973 5.24756 3.19863 5.24756 2.99937C5.24756 2.80011 5.32671 2.60902 5.46761 2.46812C5.60851 2.32723 5.7996 2.24807 5.99886 2.24807C6.19812 2.24807 6.38921 2.32723 6.53011 2.46812L6.53073 2.46937Z"
+									fill="black" fill-opacity="0.6" />
+							</svg>
+						</li>
+						<li class="inline-flex items-center">
+							<a class="text-black/60 hover:text-c-yellow transition-all duration-300" href="#">Shop</a>
+							<svg class="rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path
+									d="M6.53073 2.46937L11.5307 7.46937C11.6007 7.53905 11.6561 7.62184 11.694 7.71301C11.7318 7.80417 11.7513 7.90191 11.7513 8.00062C11.7513 8.09933 11.7318 8.19707 11.694 8.28824C11.6561 8.3794 11.6007 8.46219 11.5307 8.53187L6.53073 13.5319C6.38984 13.6728 6.19874 13.7519 5.99948 13.7519C5.80023 13.7519 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0006C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8L5.46761 3.53062C5.32671 3.38973 5.24756 3.19863 5.24756 2.99937C5.24756 2.80011 5.32671 2.60902 5.46761 2.46812C5.60851 2.32723 5.7996 2.24807 5.99886 2.24807C6.19812 2.24807 6.38921 2.32723 6.53011 2.46812L6.53073 2.46937Z"
+									fill="black" fill-opacity="0.6" />
+							</svg>
+						</li>
+						<li class="inline-flex items-center">
+							<a class="text-black/60 hover:text-c-yellow transition-all duration-300" href="#">Men</a>
+							<svg class="rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path
+									d="M6.53073 2.46937L11.5307 7.46937C11.6007 7.53905 11.6561 7.62184 11.694 7.71301C11.7318 7.80417 11.7513 7.90191 11.7513 8.00062C11.7513 8.09933 11.7318 8.19707 11.694 8.28824C11.6561 8.3794 11.6007 8.46219 11.5307 8.53187L6.53073 13.5319C6.38984 13.6728 6.19874 13.7519 5.99948 13.7519C5.80023 13.7519 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0006C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8L5.46761 3.53062C5.32671 3.38973 5.24756 3.19863 5.24756 2.99937C5.24756 2.80011 5.32671 2.60902 5.46761 2.46812C5.60851 2.32723 5.7996 2.24807 5.99886 2.24807C6.19812 2.24807 6.38921 2.32723 6.53011 2.46812L6.53073 2.46937Z"
+									fill="black" fill-opacity="0.6" />
+							</svg>
+						</li>
+						<li class="inline-flex items-center" aria-current="page">
+							<span>T-shirts</span>
+						</li>
+					</ol>
+				</nav>
+			</div>
+			<div class="container flex gap-x-10">
+				<div class="basis-6/12 hidden">
+					<div class="flex gap-x-[14px] items-start min-w-0" data-double-slider>
+						<div class="w-[153px] h-[530px] swiper" data-double-preview>
+							<div class="swiper-wrapper">
+								<div class="relative w-[157px] h-[167px] swiper-slide rounded-middle overflow-hidden">
+									<img class="ibg-cover" src="@i/products/t-shirts/product01.png" alt="product">
+								</div>
+								<div class="relative w-[157px] h-[167px] swiper-slide rounded-middle overflow-hidden">
+									<img class="ibg-cover" src="@i/products/t-shirts/product02.png" alt="product">
+								</div>
+								<div class="relative w-[157px] h-[167px] swiper-slide rounded-middle overflow-hidden">
+									<img class="ibg-cover" src="@i/products/t-shirts/product03.png" alt="product">
+								</div>
+							</div>
+						</div>
+						<div class="swiper" data-double-main>
+							<div class="swiper-wrapper">
+								<div class="relative w-[444px] h-[530px] swiper-slide rounded-middle overflow-hidden">
+									<img class="ibg-cover" src="@i/products/t-shirts/product01.png" alt="product">
+								</div>
+								<div class="relative w-[444px] h-[530px] swiper-slide rounded-middle overflow-hidden">
+									<img class="ibg-cover" src="@i/products/t-shirts/product02.png" alt="product">
+								</div>
+								<div class="relative w-[444px] h-[530px] swiper-slide rounded-middle overflow-hidden">
+									<img class="ibg-cover" src="@i/products/t-shirts/product03.png" alt="product">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="basis-6/12 ml-auto">
+					<div class="border-b border-black/10 pb-6">
+						<h1 class="title h2 h2_small not-last:mb-[14px]">One Life Graphic T-shirt</h1>
+						<div class="flex items-center gap-x-2 not-last:mb-[14px]" data-rating data-rating-value="4.5">
+							<div class="flex items-center sm:gap-x-2">
+								<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+									<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+								</svg>
+								<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+									<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+								</svg>
+								<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+									<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+								</svg>
+								<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+									<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+								</svg>
+								<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+									<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+								</svg>
+							</div>
+							<p class="text-xs sm:text-[14px]"><span>4.5</span>/<span class="text-black/40">5</span></p>
+						</div>
+						<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2 not-last:mb-5">
+							<p class="text-xl sm:text-[32px] font-bold"><span>$</span>260</p>
+							<p class="text-xl sm:text-[32px] text-black/40 font-bold line-through"><span>$</span>300</p>
+							<p class="text-c-red font-medium   flex items-center justify-center text-center px-[8px] py-[3px] sm:px-[14px] min-h-5 sm:min-h-7 rounded-big bg-discount">-40%</p>
+						</div>
+						<p class="text-black/60">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+					</div>
+					<form action="#" method="post">
+						<div class="flex flex-col gap-4 border-b border-black/10 py-6">
+							<span class="text-black/60">Select Colors</span>
+							<div class="flex gap-6 flex-wrap">
+								<div class="flex flex-wrap items-center gap-4">
+									<div class="flex items-center justify-center basis-9 w-9 h-9">
+										<input checked id="product-red" type="radio" name="product-color" value="product red" class="hidden peer">
+										<label for="product-red" class="w-full h-full bg-product-c-brown rounded-full cursor-pointer bg-checked"></label>
+									</div>
+									<div class="flex basis-9 w-9 h-9">
+										<input id="product-green" type="radio" name="product-color" value="product green" class="hidden peer">
+										<label for="product-green" class="w-full h-full bg-product-c-green rounded-full cursor-pointer bg-checked"></label>
+									</div>
+									<div class="flex basis-9 w-9 h-9">
+										<input id="product-blue" type="radio" name="product-color" value="product green" class="hidden peer">
+										<label for="product-blue" class="w-full h-full bg-product-c-blue rounded-full cursor-pointer bg-checked"></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4 border-b border-black/10 py-6">
+							<span class="text-black/60">Choose Size</span>
+							<div class="flex gap-6 flex-wrap">
+								<div class="flex flex-wrap items-center gap-4">
+									<div class="flex">
+										<input id="product-small" type="radio" name="product-size" value="product small" class="hidden peer">
+										<label for="product-small"
+											class="px-6 py-3 text-center bg-c-white-200 rounded-[64px] cursor-pointer peer-checked:bg-black text-black/60 peer-checked:text-white hover:bg-black hover:text-white transition-all duration-300">Small</label>
+									</div>
+									<div class="flex">
+										<input id="product-medium" type="radio" name="product-size" value="product medium" class="hidden peer">
+										<label for="product-medium"
+											class="px-6 py-3 text-center bg-c-white-200 rounded-[64px] cursor-pointer peer-checked:bg-black text-black/60 peer-checked:text-white hover:bg-black hover:text-white transition-all duration-300">Medium</label>
+									</div>
+									<div class="flex">
+										<input checked id="product-large" type="radio" name="product-size" value="product large" class="hidden peer">
+										<label for="product-large"
+											class="px-6 py-3 text-center bg-c-white-200 rounded-[64px] cursor-pointer peer-checked:bg-black text-black/60 peer-checked:text-white hover:bg-black hover:text-white transition-all duration-300">Large</label>
+									</div>
+									<div class="flex">
+										<input id="product-x-large" type="radio" name="product-size" value="product x-large" class="hidden peer">
+										<label for="product-x-large"
+											class="px-6 py-3 text-center bg-c-white-200 rounded-[64px] cursor-pointer peer-checked:bg-black text-black/60 peer-checked:text-white hover:bg-black hover:text-white transition-all duration-300">X-Large</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex items-center pt-6">
+							<div>
+
+								<form class="max-w-xs mx-auto">
+									<label for="bedrooms-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose quantity:</label>
+									<div class="relative flex items-center max-w-[11rem]">
+										<button type="button" id="decrement-button" data-input-counter-decrement="bedrooms-input"
+											class="bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 border border-gray-300 rounded-s-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+											-
+										</button>
+										<input type="text" id="bedrooms-input" data-input-counter data-input-counter-min="1" data-input-counter-max="999" aria-describedby="helper-text-explanation"
+											class="bg-gray-50 border-x-0 border-gray-300 font-medium text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+											value="3" required />
+										<div class="absolute bottom-1 start-1/2 -translate-x-1/2 rtl:translate-x-1/2 flex items-center text-xs text-gray-400 space-x-1 rtl:space-x-reverse">
+										</div>
+										<button type="button" id="increment-button" data-input-counter-increment="bedrooms-input"
+											class="bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 border border-gray-300 rounded-e-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+											+
+										</button>
+									</div>
+								</form>
+
+							</div>
+							<button class="button ml-auto w-3/5 p-4 bg-black" type="submit">Add to Cart</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<section>
+				<div class="container flex flex-col pt-14   md:pt-16 pb-[25px] md:pb-10">
+					<h2 class="title h2 text-center not-last:mb-8 md:not-last:mb-14">TOP SELLING</h2>
+					<ul class="flex flex-row -me-4 pe-4 sm:pe-0 sm:me-0 gap-x-4 pb-2 sm:pb-0 overflow-x-auto sm:grid sm:grid-cols-2 sm:gap-y-7 sm:gap-x-5 lg:grid-cols-4 not-last:mb-6 sm:not-last:mb-9">
+						<li class="smMax:basis-[200px] smMax:shrink-0">
+							<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+								<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product01.png" alt="product">
+							</a>
+							<div class="flex flex-col items-start gap-1 sm:gap-2">
+								<a href="#">
+									<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Vertical Striped Shirt</h3>
+								</a>
+								<div class="flex items-center gap-x-2" data-rating data-rating-value="5.0">
+									<div class="flex items-center sm:gap-x-2">
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+									</div>
+									<p class="text-xs sm:text-[14px]"><span>5.0</span>/<span class="text-black/40">5</span></p>
+								</div>
+								<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+									<p class="text-xl sm:text-2xl font-bold"><span>$</span>212</p>
+									<p class="text-xl sm:text-2xl text-black/40 font-bold line-through"><span>$</span>232</p>
+									<p class="text-[10px] sm:text-xs text-c-red font-medium   flex items-center justify-center text-center px-[8px] py-[3px] sm:px-[14px] min-h-5 sm:min-h-7 rounded-big bg-discount">-20%</p>
+								</div>
+							</div>
+						</li>
+						<li class="smMax:basis-[200px] smMax:shrink-0">
+							<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+								<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product02.png" alt="product">
+							</a>
+							<div class="flex flex-col items-start gap-1 sm:gap-2">
+								<a href="#">
+									<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Courage Graphic T-shirt</h3>
+								</a>
+								<div class="flex items-center gap-x-2" data-rating data-rating-value="4.0">
+									<div class="flex items-center sm:gap-x-2">
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+									</div>
+									<p class="text-xs sm:text-[14px]"><span>4.0</span>/<span class="text-black/40">5</span></p>
+								</div>
+								<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+									<p class="text-xl sm:text-2xl font-bold"><span>$</span>145</p>
+								</div>
+							</div>
+						</li>
+						<li class="smMax:basis-[200px] smMax:shrink-0">
+							<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+								<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product03.png" alt="product">
+							</a>
+							<div class="flex flex-col items-start gap-1 sm:gap-2">
+								<a href="#">
+									<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Loose Fit Bermuda Shorts</h3>
+								</a>
+								<div class="flex items-center gap-x-2" data-rating data-rating-value="3.0">
+									<div class="flex items-center sm:gap-x-2">
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+									</div>
+									<p class="text-xs sm:text-[14px]"><span>3.0</span>/<span class="text-black/40">5</span></p>
+								</div>
+								<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+									<p class="text-xl sm:text-2xl font-bold"><span>$</span>80</p>
+								</div>
+							</div>
+						</li>
+						<li class="smMax:basis-[200px] smMax:shrink-0">
+							<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+								<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product04.png" alt="product">
+							</a>
+							<div class="flex flex-col items-start gap-1 sm:gap-2">
+								<a href="#">
+									<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Faded Skinny Jeans</h3>
+								</a>
+								<div class="flex items-center gap-x-2" data-rating data-rating-value="4.3">
+									<div class="flex items-center sm:gap-x-2">
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+										<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+											<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z" fill="#FFC633" />
+										</svg>
+									</div>
+									<p class="text-xs sm:text-[14px]"><span>4.3</span>/<span class="text-black/40">5</span></p>
+								</div>
+								<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+									<p class="text-xl sm:text-2xl font-bold"><span>$</span>210</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<include src="@c/footer/_footer.html"></include>
+	</div>
+	<script type="module" crossorigin src="/src/js/main.js"></script>
+</body>
+
+</html>

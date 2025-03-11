@@ -11,64 +11,76 @@
     "className": "_icon-arrow",
     "unicode": "&#59906;"
   },
-  "close": {
+  "check": {
     "encodedCode": "\\ea03",
     "prefix": "_icon",
-    "className": "_icon-close",
+    "className": "_icon-check",
     "unicode": "&#59907;"
   },
-  "facebook": {
+  "checked": {
     "encodedCode": "\\ea04",
     "prefix": "_icon",
-    "className": "_icon-facebook",
+    "className": "_icon-checked",
     "unicode": "&#59908;"
   },
-  "github": {
+  "close": {
     "encodedCode": "\\ea05",
     "prefix": "_icon",
-    "className": "_icon-github",
+    "className": "_icon-close",
     "unicode": "&#59909;"
   },
-  "instagram": {
+  "facebook": {
     "encodedCode": "\\ea06",
     "prefix": "_icon",
-    "className": "_icon-instagram",
+    "className": "_icon-facebook",
     "unicode": "&#59910;"
   },
-  "mail": {
+  "github": {
     "encodedCode": "\\ea07",
     "prefix": "_icon",
-    "className": "_icon-mail",
+    "className": "_icon-github",
     "unicode": "&#59911;"
   },
-  "serach": {
+  "instagram": {
     "encodedCode": "\\ea08",
     "prefix": "_icon",
-    "className": "_icon-serach",
+    "className": "_icon-instagram",
     "unicode": "&#59912;"
   },
-  "shop": {
+  "mail": {
     "encodedCode": "\\ea09",
     "prefix": "_icon",
-    "className": "_icon-shop",
+    "className": "_icon-mail",
     "unicode": "&#59913;"
   },
-  "star": {
+  "serach": {
     "encodedCode": "\\ea0a",
     "prefix": "_icon",
-    "className": "_icon-star",
+    "className": "_icon-serach",
     "unicode": "&#59914;"
   },
-  "twitter": {
+  "shop": {
     "encodedCode": "\\ea0b",
     "prefix": "_icon",
-    "className": "_icon-twitter",
+    "className": "_icon-shop",
     "unicode": "&#59915;"
   },
-  "user": {
+  "star": {
     "encodedCode": "\\ea0c",
     "prefix": "_icon",
-    "className": "_icon-user",
+    "className": "_icon-star",
     "unicode": "&#59916;"
+  },
+  "twitter": {
+    "encodedCode": "\\ea0d",
+    "prefix": "_icon",
+    "className": "_icon-twitter",
+    "unicode": "&#59917;"
+  },
+  "user": {
+    "encodedCode": "\\ea0e",
+    "prefix": "_icon",
+    "className": "_icon-user",
+    "unicode": "&#59918;"
   }
 }
