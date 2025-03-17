@@ -1,0 +1,31 @@
+{
+[
+	{
+		"id": 1,
+		"text": "What sizes are available for this clothing item?",
+		"answer": "Sizes range from XS to XXL, depending on the specific item. Please check the size chart on the product page."
+	  },
+	  {
+		"id": 2,
+		"text": "How should I care for this item (e.g., washing, ironing)?",
+		"answer": "Care instructions vary by item. Most items can be machine washed on a gentle cycle and ironed on low heat. Check the label or product description for details."
+	  },
+	  {
+		"id": 3,
+		"text": "Is it possible to return or exchange the item if it doesn’t fit?",
+		"answer": "Yes, we offer returns and exchanges within 30 days of purchase, provided the item is unworn and in its original condition."
+	  },
+	  {
+		"id": 4,
+		"text": "How long does shipping take?",
+		"answer": "Shipping typically takes 3-7 business days, depending on your location and the shipping method selected at checkout."
+	  },
+	  {
+		"id": 5,
+		"text": "What material is this clothing made of?",
+		"answer": "Materials vary by product. Common materials include cotton, polyester, and blends. Refer to the product description for specifics."
+	  }
+]
+
+
+  }

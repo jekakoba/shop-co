@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Product Name",
+    "value": "Basic T-Shirt"
+  },
+  {
+    "label": "Material",
+    "value": "100% Cotton"
+  },
+  {
+    "label": "Size",
+    "value": "S, M, L, XL"
+  },
+  {
+    "label": "Color",
+    "value": "Black"
+  },
+  {
+    "label": "Gender",
+    "value": "Unisex"
+  },
+  {
+    "label": "Sleeve Length",
+    "value": "Short"
+  },
+  {
+    "label": "Neckline",
+    "value": "Crew Neck"
+  },
+  {
+    "label": "Fabric Weight",
+    "value": "180 g/m²"
+  },
+  {
+    "label": "Country of Origin",
+    "value": "Ukraine"
+  },
+  {
+    "label": "Care Instructions",
+    "value": "Wash at 30°C"
+  }
+]

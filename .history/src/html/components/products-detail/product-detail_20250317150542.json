@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Material",
+    "value": "One Life Graphic T-shirt"
+  },
+  {
+    "material": "100% Cotton",
+    "size": "S, M, L, XL",
+    "color": "Black",
+    "gender": "Unisex",
+    "sleeve-length": "Short",
+    "neckline": "Crew Neck",
+    "fabric-weight": "180 g/m²",
+    "country": "Ukraine",
+    "care instructions": "Wash at 30°C"
+  }
+]

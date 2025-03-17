@@ -1,0 +1,1 @@
+import { Tabs } from "../../../../node_modules/flowbite/lib/esm/index";
