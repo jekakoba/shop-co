@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<include src="@h/other/_head.html" locals='{
+	"pageTitle": "Category",
+	"meta": "Category"
+}'>
+</include>
+
+<body class="font-f-primary">
+	<include src="./src/html/components/header/_header.html"></include>
+	<div class="wrapper">
+		<main class="space-dynamic-top pb-5 md:pb-10">
+			<div class="container  pt-7 pb-6">
+				<nav class="overflow-x-auto whitespace-nowrap pb-2" aria-label="Breadcrumb">
+					<ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+						<li class="inline-flex flex-row items-center">
+							<a class="text-black/60 hover:text-c-yellow transition-all duration-300" href="#">Home</a>
+							<svg class="rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path
+									d="M6.53073 2.46937L11.5307 7.46937C11.6007 7.53905 11.6561 7.62184 11.694 7.71301C11.7318 7.80417 11.7513 7.90191 11.7513 8.00062C11.7513 8.09933 11.7318 8.19707 11.694 8.28824C11.6561 8.3794 11.6007 8.46219 11.5307 8.53187L6.53073 13.5319C6.38984 13.6728 6.19874 13.7519 5.99948 13.7519C5.80023 13.7519 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0006C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8L5.46761 3.53062C5.32671 3.38973 5.24756 3.19863 5.24756 2.99937C5.24756 2.80011 5.32671 2.60902 5.46761 2.46812C5.60851 2.32723 5.7996 2.24807 5.99886 2.24807C6.19812 2.24807 6.38921 2.32723 6.53011 2.46812L6.53073 2.46937Z"
+									fill="black" fill-opacity="0.6" />
+							</svg>
+						</li>
+						<li class="inline-flex items-center" aria-current="page">
+							<span>Casual</span>
+						</li>
+					</ol>
+				</nav>
+			</div>
+			<section>
+				<div class="container flex gap-x-5">
+					<aside class="basis-[295px] bg-white px-6 py-5 rounded-middle border border-black/10">
+						<div class="flex gap-x-5 items-center justify-between pb-6 border-b border-black/10">
+							<h4 class="font-bold text-xl">Filter</h4>
+							<button class="w-5 h-5" type="button">
+								<i class="_icon-filter"></i>
+							</button>
+						</div>
+						<ul class="grid gap-y-6 py-6 border-black/10 border-y">
+							<li>
+								<a class="text-black/60 hover:text-c-yellow transition-all duration-300 before:content-['']" href="#">T-shirts</a>
+							</li>
+							<li>
+								<a class="text-black/60 hover:text-c-yellow transition-all duration-300" href="#">Shorts</a>
+							</li>
+						</ul>
+					</aside>
+					<div class="flex-1">
+						<div class="not-last:mb-7 flex justify-between gap-x-5 items-center">
+							<h2 class="title font-f-primary text-[32px]">Casual</h2>
+						</div>
+						<ul class="flex flex-row -me-4 pe-4 sm:pe-0 sm:me-0 gap-x-4 pb-2 sm:pb-0 overflow-x-auto sm:grid sm:grid-cols-2 sm:gap-y-7 sm:gap-x-5 lg:grid-cols-3 not-last:mb-6 sm:not-last:mb-9">
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product01.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Vertical Striped Shirt</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="5.0">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>5.0</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>212</p>
+										<p class="text-xl sm:text-2xl text-black/40 font-bold line-through"><span>$</span>232</p>
+										<p class="text-[10px] sm:text-xs text-c-red font-medium   flex items-center justify-center text-center px-[8px] py-[3px] sm:px-[14px] min-h-5 sm:min-h-7 rounded-big bg-discount">-20%</p>
+									</div>
+								</div>
+							</li>
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product02.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Courage Graphic T-shirt</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="4.0">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>4.0</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>145</p>
+									</div>
+								</div>
+							</li>
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product03.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Loose Fit Bermuda Shorts</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="3.0">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>3.0</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>80</p>
+									</div>
+								</div>
+							</li>
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product04.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Faded Skinny Jeans</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="4.3">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>4.3</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>210</p>
+									</div>
+								</div>
+							</li>
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product01.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Vertical Striped Shirt</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="5.0">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>5.0</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>212</p>
+										<p class="text-xl sm:text-2xl text-black/40 font-bold line-through"><span>$</span>232</p>
+										<p class="text-[10px] sm:text-xs text-c-red font-medium   flex items-center justify-center text-center px-[8px] py-[3px] sm:px-[14px] min-h-5 sm:min-h-7 rounded-big bg-discount">-20%</p>
+									</div>
+								</div>
+							</li>
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product02.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Courage Graphic T-shirt</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="4.0">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>4.0</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>145</p>
+									</div>
+								</div>
+							</li>
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product03.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Loose Fit Bermuda Shorts</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="3.0">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>3.0</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>80</p>
+									</div>
+								</div>
+							</li>
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product04.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Faded Skinny Jeans</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="4.3">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>4.3</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>210</p>
+									</div>
+								</div>
+							</li>
+							<li class="smMax:basis-[200px] smMax:shrink-0">
+								<a class="rounded-small sm:rounded-middle overflow-hidden block bg-c-gray relative aspect-square mb-3 sm:mb-4" href="#">
+									<img class="hover:scale-105 w-full h-full object-scale-down  transition-all duration-500 ease-linear" width="295" height="295" src="@i/products/product04.png" alt="product">
+								</a>
+								<div class="flex flex-col items-start gap-1 sm:gap-2">
+									<a href="#">
+										<h3 class="sm:text-xl font-bold capitalize leading-tight line-clamp-2 break-words hover:text-c-yellow transition-color duration-300 ease-linear">Faded Skinny Jeans</h3>
+									</a>
+									<div class="flex items-center gap-x-2" data-rating data-rating-value="4.3">
+										<div class="flex items-center sm:gap-x-2">
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+											<svg class="w-4 h-3 sm:w-[19px]  sm:h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" fill="none">
+												<path d="M9.24494 0.255127L11.8641 5.89504L18.0374 6.64322L13.4829 10.8771L14.679 16.9794L9.24494 13.9561L3.8109 16.9794L5.00697 10.8771L0.452479 6.64322L6.62573 5.89504L9.24494 0.255127Z"
+													fill="#FFC633" />
+											</svg>
+										</div>
+										<p class="text-xs sm:text-[14px]"><span>4.3</span>/<span class="text-black/40">5</span></p>
+									</div>
+									<div class="flex flex-wrap gap-x-2 sm:gap-x-4 gap-y-2">
+										<p class="text-xl sm:text-2xl font-bold"><span>$</span>210</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<include src="@c/footer/_footer.html"></include>
+	</div>
+	<script type="module" crossorigin src="/src/js/main.js"></script>
+</body>
+
+</html>

@@ -43,8 +43,8 @@
 					</ol>
 				</nav>
 			</div>
-			<div class="container">
-				<section class="flex flex-col gap-y-5 sm:gap-y-10 lg:flex-row  gap-x-10   lg:items-start">
+			<section class="pb-6 md:pb-10">
+				<div class="container flex flex-col gap-y-5 sm:gap-y-10 lg:flex-row  gap-x-10   lg:items-start">
 					<div class="lg:basis-6/12 flex flex-col-reverse sm:flex-row justify-end sm:justify-center gap-y-[14px] gap-x-[14px] min-w-0  sm:h-[562px]" data-double-slider>
 						<div class="sm:basis-[152px]  swiper " data-double-preview>
 							<div class="swiper-wrapper">
@@ -171,8 +171,83 @@
 							</div>
 						</form>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
+			<section class="py-6 md:py-10">
+				<div class="container">
+					<div class="mb-7">
+						<ul class="flex  sm:text-xl whitespace-nowrap overflow-x-auto  font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+							<li class="basis-1/3" role="presentation">
+								<button class="w-full   p-4 border-b-2" id="product-detail-tab-button" data-tabs-target="#product-detail-tab" type="button" role="tab" aria-controls="product-detail-tab" aria-selected="false">Product Details</button>
+							</li>
+							<li class="basis-1/3" role="presentation">
+								<button class="w-full  p-4 border-b-2" id="rating-tab-button" data-tabs-target="#rating-tab" type="button" role="tab" aria-controls="rating-tab" aria-selected="true">Rating & Reviews</button>
+							</li>
+							<li class="basis-1/3" role="presentation">
+								<button class="w-full  p-4 border-b-2 " id="faq-tab-button" data-tabs-target="#faq-tab" type="button" role="tab" aria-controls="faq-tab" aria-selected="false">FAQs</button>
+							</li>
+						</ul>
+					</div>
+					<div id="default-tab-content">
+						<div id="product-detail-tab" role="tabpanel" aria-labelledby="product-detail-tab-button">
+							<dl class="grid lg:grid-cols-3 gap-y-5  gap-10">
+								<fetch url="@c/products-detail/product-detail.json">
+									<each loop="item, index in response">
+										<include src="@c/products-detail/_product-detail-item.html"></include>
+									</each>
+								</fetch>
+							</dl>
+						</div>
+						<div id="rating-tab" role="tabpanel" aria-labelledby="rating-tab-button">
+							<div class="flex flex-col">
+								<div class="flex flex-col md:flex-row gap justify-between items-center gap-5 not-last:mb-6 sm:not-last:mb-8">
+									<h3 class="text-xl sm:text-2xl shrink-0 font-bold">All Reviews <span class="text-black/60 text-[14px] sm:text-base font-normal">(451)</span></h3>
+									<div class="flex gap-[10px]">
+										<label class="flex bg-c-gray relative gap-x-5 items-center rounded-big ">
+											<select class="bg-c-gray   font-bold  w-32 cursor-pointer focus:outline-none ps-5 pe-10 py-4 rounded-big hover:bg-c-hover transition-colors duration-300">
+												<option class="bg-white" selected>Latest</option>
+												<option class="bg-white" value="Oldest">Oldest</option>
+											</select>
+											<i class="absolute w-4 h-4 end-5">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+													<path
+														d="M13.5306 6.53061L8.5306 11.5306C8.46092 11.6005 8.37813 11.656 8.28696 11.6939C8.1958 11.7317 8.09806 11.7512 7.99935 11.7512C7.90064 11.7512 7.8029 11.7317 7.71173 11.6939C7.62057 11.656 7.53778 11.6005 7.4681 11.5306L2.4681 6.53061C2.3272 6.38972 2.24805 6.19862 2.24805 5.99936C2.24805 5.80011 2.3272 5.60901 2.4681 5.46811C2.60899 5.32722 2.80009 5.24806 2.99935 5.24806C3.19861 5.24806 3.3897 5.32722 3.5306 5.46811L7.99997 9.93749L12.4693 5.46749C12.6102 5.32659 12.8013 5.24744 13.0006 5.24744C13.1999 5.24744 13.391 5.32659 13.5318 5.46749C13.6727 5.60838 13.7519 5.79948 13.7519 5.99874C13.7519 6.198 13.6727 6.38909 13.5318 6.52999L13.5306 6.53061Z"
+														fill="black" />
+												</svg>
+											</i>
+										</label>
+										<button type="button" class="button text-xs sm:text-base  px-7 py-[12px]">
+											Write a Review
+										</button>
+									</div>
+								</div>
+								<ul class="grid md:grid-cols-2 gap-5 not-last:mb-5 sm:not-last:mb-9">
+									<fetch url="@c/customers/customers-full.json">
+										<each loop="customer, index in response">
+											<include src="@c/customers/_customers-item-full.html"></include>
+										</each>
+									</fetch>
+								</ul>
+								<a href="#" class="button  button_transparent sm:self-center px-14 py-[14px]">
+									Load More Reviews
+								</a>
+							</div>
+						</div>
+						<div id="faq-tab" role="tabpanel" aria-labelledby="faq-tab-button">
+							<div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-black text-white" data-inactive-classes="text-black">
+								<fetch url="@c/faq/faq.json">
+									<each loop="faq, index in response">
+										<include src="@c/faq/_faq-item.html"></include>
+									</each>
+								</fetch>
+							</div>
+							<div class="py-6 border-black/10 border-y">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section>
 				<div class="container flex flex-col pt-14   md:pt-16 pb-[25px] md:pb-10">
 					<h2 class="title h2 text-center not-last:mb-8 md:not-last:mb-14">You might also like</h2>
@@ -312,55 +387,6 @@
 							</div>
 						</li>
 					</ul>
-				</div>
-			</section>
-			<section>
-				<div class="container">
-					<div class="mb-7">
-						<ul class="flex  sm:text-xl whitespace-nowrap overflow-x-auto  font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-							<li class="basis-1/3" role="presentation">
-								<button class="w-full   p-4 border-b-2" id="product-detail-tab-button" data-tabs-target="#product-detail-tab" type="button" role="tab" aria-controls="product-detail-tab" aria-selected="false">Product
-									Details</button>
-							</li>
-							<li class="basis-1/3" role="presentation">
-								<button class="w-full  p-4 border-b-2" id="rating-tab-button" data-tabs-target="#rating-tab" type="button" role="tab" aria-controls="rating-tab" aria-selected="true">Rating & Reviews</button>
-							</li>
-							<li class="basis-1/3" role="presentation">
-								<button class="w-full  p-4 border-b-2 " id="faq-tab-button" data-tabs-target="#faq-tab" type="button" role="tab" aria-controls="faq-tab" aria-selected="false">FAQs</button>
-							</li>
-						</ul>
-					</div>
-					<div id="default-tab-content">
-						<div class="hidden" id="rating-tab" role="tabpanel" aria-labelledby="rating-tab-button">
-							<div class="flex flex-col">
-								<div class="flex justify-between items-center gap-5 not-last:mb-6 sm:not-last:mb-8">
-									<h3 class="text-xl sm:text-2xl font-bold shrink-0">All Reviews <span class="text-black/60 text-[14px] sm:text-base font-normal">(451)</span></h3>
-									<div class="flex flex-wrap gap-[10px]">
-										<button type="button" class="button text-xs sm:text-base  px-7 py-[12px]">
-											Write a Review
-										</button>
-									</div>
-								</div>
-								<ul class="grid md:grid-cols-2 gap-5 not-last:mb-5 sm:not-last:mb-9">
-									<fetch url="@c/customers/customers-full.json">
-										<each loop="customer, index in response">
-											<include src="@c/customers/_customers-item-full.html"></include>
-										</each>
-									</fetch>
-								</ul>
-								<a href="#" class="button  button_transparent sm:self-center px-14 py-[14px]">
-									Load More Reviews
-								</a>
-							</div>
-						</div>
-						<div class="p-4 rounded-lg bg-gray-50" id="product-detail-tab" role="tabpanel" aria-labelledby="product-detail-tab-button">
-							<p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content for the <strong class="font-medium text-gray-800 dark:text-white">Product Details tab</strong>. Clicking another tab will toggle the
-								visibility of this one for the next.</p>
-						</div>
-						<div class="hidden p-4 rounded-lg bg-gray-50" id="faq-tab" role="tabpanel" aria-labelledby="faq-tab-button">
-							<p>faql</p>
-						</div>
-					</div>
 				</div>
 			</section>
 		</main>
