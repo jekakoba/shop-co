@@ -6,11 +6,11 @@
   "keywords": [],
   "author": "FrontElf",
   "scripts": {
-    "d": "vite dev",
-    "b": "vite build",
-    "p": "vite preview",
-    "f": "node ./plugins/convertFonts.js && node ./plugins/iconsFontGenerator.js",
-    "i": "node ./plugins/iconsFontGenerator.js",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fonts": "node ./plugins/convertFonts.js && node ./plugins/iconsFontGenerator.js",
+    "ifont": "node ./plugins/iconsFontGenerator.js",
     "aliases": "node ./plugins/generateAliases.js"
   },
   "devDependencies": {

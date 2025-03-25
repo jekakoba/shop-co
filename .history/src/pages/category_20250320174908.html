@@ -6,8 +6,7 @@
 }'>
 </include>
 
-<body
-	class="font-f-primary relative  before:fixed before:inset-0 before:z-[500] before:w-full before:h-full lgMax:before:bg-black/50 before:opacity-0 before:invisible before:transition-all before:duration-300 [.show-filter_&]:before:opacity-100 [.show-filter_&]:before:visible">
+<body class="font-f-primary relative before:content-[''] before:fixed before:inset-0 before:z-[500] before:w-full before:h-full before:bg-black/50 before:transition-colors before:duration-300">
 	<include src="./src/html/components/header/_header.html"></include>
 	<div class="wrapper">
 		<main class="space-dynamic-top pb-12 md:pb-20">
@@ -30,7 +29,7 @@
 			</div>
 			<div class="container flex flex-col lg:flex-row gap-x-5">
 				<aside
-					class="lg:basis-[295px] lg:max-h-[calc(100vh-var(--header-height,107px)-40px)] lg:sticky lg:top-[calc(var(--header-height,107px)+30px)] lgMax:fixed lgMax:bottom-0  lgMax:start-0 lgMax:h-[73svh]  z-[600] lgMax:[.show-filter_&]:w-full  lgMax:translate-y-full lgMax:[.show-filter_&]:translate-y-0   transition-all duration-300"
+					class="lg:basis-[295px] lg:max-h-[calc(100vh-var(--header-height,107px)-40px)] lg:sticky lg:top-[calc(var(--header-height,107px)+30px)] lgMax:fixed lgMax:bottom-0  lgMax:start-0 lgMax:[.show-filter_&]:h-[73svh]  lgMax:[.show-filter_&]:z-[600] lgMax:[.show-filter_&]:w-full lgMax:opacity-0 lgMax:translate-y-full lgMax:[.show-filter_&]:translate-y-0 lgMax:[.show-filter_&]:opacity-100  transition-transform duration-300"
 					data-filter>
 					<div class="bg-white border border-black/10 max-h-full overflow-x-hidden overflow-y-auto px-6 py-5 h-full rounded-t-middle  lg:rounded-s-middle lg:rounded-e-middle lg:h-auto ">
 						<div class="flex gap-x-5 items-center justify-between pb-6 not-last:border-b border-black/10">
